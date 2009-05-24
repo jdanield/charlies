@@ -22,13 +22,16 @@ function Charlies_content($picture)
   // TODO TPL DOES NOT EXIST 
   $path = $picture['element_path'];
   $url = $picture['element_url'];
-  if ( substr($url,0,4)!='http' and substr($url,0,1)!='/' )
+  if ( !url_is_remote($url) )
   {
     set_make_full_url();
-    $url = get_element_url( $picture );;
+    $url = get_element_url( $picture );
     unset_make_full_url();
   }
-
+	// If needed NO_https can easily be set in your config_local thru LocalFiles Editor
+  if (isset($conf['NO_https']) and $conf['NO_https'] and strncasecmp($url, 'https://', 8) == 0 ) 
+	  $url = 'http://' . substr($url, 8);
+		
 	if (!isset($conf['video_default_width'])) 	$conf['video_default_width'] = $charlie['video_default_width']; 
 	if (!isset($conf['video_default_height'])) 	$conf['video_default_height'] = $charlie['video_default_height'];
   // Get info via getid3

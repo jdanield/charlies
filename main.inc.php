@@ -1,6 +1,6 @@
 <?php /*
 Plugin Name: Charlies content
-Version: 2.0.c
+Version: 2.0.d
 Description: Charlies content is a global solution for none picture files.
 Plugin URI: http://fr.piwigo.org/ext/extension_view.php?eid=119
 Author: VDigital, rvelices (PhpWebGallery team)
@@ -20,6 +20,8 @@ Requirements/recommendations:
     must be in the charlies_content directory
 
 /** History ***************
+  2009-05-24 2.0.d (Called lumenation bypass)
+	           some url were generated with https://
   2009-04-13 2.0.c 
 	           Flipflip proposal to exclude GETID3 for some extends
 						 nolive proposal to support GPX extensions
@@ -54,7 +56,7 @@ Requirements/recommendations:
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('CHARLIES_DIR' , basename(dirname(__FILE__)));
 define('CHARLIES_PATH' , PHPWG_PLUGINS_PATH . CHARLIES_DIR . '/');
-define('CHARLIES_VER' , '2.0.c');
+define('CHARLIES_VER' , '2.0.d');
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x);
 if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER) 

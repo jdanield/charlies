@@ -2,7 +2,7 @@
 {*
  If you don't plan to play flv files on your web site,
  change player by the one you want
- Based on documention from http://bluebird.univ-reunion.fr/fms/proto/flv-stream-player/
+ Based on documention from http://flv-player.net/players/maxi/documentation/
 *}
 <br />
 {if $Charlies.forced_width!=''}{assign var="resolution_x" value="`$Charlies.forced_width`"}
@@ -33,7 +33,7 @@
 					*}{if ($Charlies.ondoubleclicktarget==1)}&amp;ondoubleclicktarget=_blank{/if}{* -
 				Buffering
 					*}{if $Charlies.buffer!=''}&amp;buffer={$Charlies.buffer}{/if}{* -
-					*}{if ($Charlies.buffermessage==1)}&amp;buffermessage=1&amp;buffercolor={$Charlies.color5|substr:1}{/if}{* -
+					*}&amp;buffermessage={$Charlies.buffermessage}&amp;buffercolor={$Charlies.color5|substr:1}{* -
 					*}{if ($Charlies.buffershowbg==1)}&amp;buffershowbg=1&amp;bufferbgcolor={$Charlies.color6|substr:1}{/if}{* -
 				Config by element
 					*}{if ($Charlies.config==1)}&amp;config={$SRC_IMG_ENCODED|substr:0:-3}txt{/if}{* -

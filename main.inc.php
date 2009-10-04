@@ -1,6 +1,6 @@
 <?php /*
 Plugin Name: Charlies content
-Version: 2.0.d
+Version: 2.0.e
 Description: Charlies content is a global solution for none picture files.
 Plugin URI: http://fr.piwigo.org/ext/extension_view.php?eid=119
 Author: VDigital, rvelices (PhpWebGallery team)
@@ -10,16 +10,15 @@ Author URI: http://www.phpwebgallery.net
 1 - Based on file extension...
 2 - A template is used in state of the default content
 
-Localisation of Charlies content: Possible
-
-Requirements/recommendations:
-1 - php 5
-2 - GETID3 php modules (James Heinrich, Allan Hansen)
-3 - $charlie['xxxxx']=array(....extensions....) means:
-    if file extension is in the array a file charlie_xxxxx.tpl will be used and 
-    must be in the charlies_content directory
+Dependencies:
+http://getid3.sourceforge.net/
+http://flv-player.net/players/maxi/documentation/
 
 /** History ***************
+  2009-05-24 2.0.e (Called ngoc version)
+	           buffermessage correction for flv
+						 The lumenation bypass is maintain (but no longer needed with recent Piwigo versions)
+						 getID3 v2.0.0-b5 not tested => Still in v2.0.0-b4
   2009-05-24 2.0.d (Called lumenation bypass)
 	           some url were generated with https://
   2009-04-13 2.0.c 
@@ -56,7 +55,7 @@ Requirements/recommendations:
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('CHARLIES_DIR' , basename(dirname(__FILE__)));
 define('CHARLIES_PATH' , PHPWG_PLUGINS_PATH . CHARLIES_DIR . '/');
-define('CHARLIES_VER' , '2.0.d');
+define('CHARLIES_VER' , '2.0.e');
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x);
 if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER) 
@@ -86,7 +85,8 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 	if (!isset($charlie['ondoubleclick'])) 	$charlie['ondoubleclick'] = 'fullscreen';
 	if (!isset($charlie['ondoubleclicktarget'])) 		$charlie['ondoubleclicktarget'] = 0;
 	if (!isset($charlie['buffer'])) 		$charlie['buffer'] = 10;
-	if (!isset($charlie['buffermessage'])) 	$charlie['buffermessage'] = 1;
+	if (!isset($charlie['buffermessage'])) 	$charlie['buffermessage'] = 'Buffering _n_';
+	if ($charlie['buffermessage']==1) 	$charlie['buffermessage'] = 'Buffering _n_';
 	if (!isset($charlie['buffershowbg'])) 	$charlie['buffershowbg'] = 0;
 	if (!isset($charlie['config'])) 		$charlie['config'] = 0;
 	if (!isset($charlie['configxml'])) 	$charlie['configxml'] = 0;

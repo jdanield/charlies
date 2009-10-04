@@ -125,8 +125,7 @@ jQuery().ready(function(){ldelim}
 		</li>
 		<li>
 			<span class="property">{'Video buffer percent message'|@translate}</span>
-			<input type="radio" value="1" name="buffermessage" {if ($Charlies.buffermessage==1)} checked="checked" {/if}/>{'On'|@translate}
-			<input type="radio" value="0" name="buffermessage" {if ($Charlies.buffermessage==0)} checked="checked" {/if}/>{'Off'|@translate}
+			<input type="text" size="32" id="buffermessage" name="buffermessage" value="{$Charlies.buffermessage}" title="{'Buffering _n_'|@translate}" />
 		</li>
 		<li>
 			<span class="property">{'Video buffer background'|@translate}</span>

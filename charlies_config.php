@@ -3,6 +3,7 @@
 /* Configuration of Charlies */
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 if (!defined('IN_ADMIN') or !IN_ADMIN) die('Hacking attempt!');
+load_language('plugin.lang', CHARLIES_PATH);
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x); else $charlie = array();
 $errors = array();

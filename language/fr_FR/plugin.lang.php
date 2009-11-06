@@ -1,10 +1,14 @@
 <?php
 //Plugin Name: Charlies content
 //File charlies_config.php
-$lang['Templates configuration'] = 'Configuration des Templates';
+
+// More info on http://flv-player.net/fr/players/maxi/documentation/
+// compared to http://flv-player.net/en/players/maxi/documentation/
+
+$lang['Templates configuration'] = 'Configuration des templates';
 $lang['Players options'] = 'Options des Players ';
 $lang['Players colors'] = 'Couleurs des Players ';
-$lang['Curtain selection'] = 'Sélection des Rideaux';
+$lang['Curtain selection'] = 'Sélection des rideaux';
 $lang['Forced width is out of range (Correct range: 90-1024)'] = 'Largeur forcée hors limites (Plage de valeurs correctes : 90-1024)';
 $lang['Forced height is out of range (Correct range: 90-1024)'] = 'Hauteur forcée hors limites (Plage de valeurs correctes : 90-1024)';
 $lang['Default width is out of range (Correct range: 90-1024)'] = 'Largeur par défaut hors limites (Plage de valeurs correctes : 90-1024)';
@@ -33,9 +37,9 @@ $lang['Your configuration is saved.'] = 'Votre configuration est sauvegardée.';
 $lang['Save Charlies\' configuration'] = 'Sauvegarde la configuration de Charlies\'';
 $lang['On'] = 'Oui';
 $lang['Off'] = 'Non';
-//tab1 : templates
+//tab1 : templates (Modèles)
 $lang['Charlies player template-mimetype association'] = 'Association template-mimetype du player de Charlies';
-$lang['Bind your prefered extensions to a template file (player) from:'] = 'Lie vos extensions préférées à un fichier template (player) issu de :';
+$lang['Bind your prefered extensions to a template file (player) from:'] = 'Associe vos extensions préférées à un fichier template (player) issu de :';
 $lang['Note: These options are available with the Maxi FLV Player. More details on all theses options on:'] = 'Note : Ces options sont disponibles avec le player Maxi FLV. Plus de détails sur ces options sur :';
 //tab2 : options
 $lang['Charlies players configuration'] = 'Configuration des players de Charlies';
@@ -47,10 +51,10 @@ $lang['Titleling'] = 'Titrage';
 $lang['Subtitleling'] = 'Sous-titrage';
 $lang['Player and Buttons'] = 'Player et boutons';
 $lang['Miscellaneous'] = 'Divers';
-//tab2 : options -> subtab1 : General options
-$lang['Autoload'] = 'Chargement automatique';
+//tab2 : options -> subtab1 : Options générales
+$lang['Autoload'] = 'Pré-chargement';
 $lang['Display first picture'] = 'Affichage de la première image';
-$lang['Autoplay'] = 'Démarrage automatique';
+$lang['Autoplay'] = 'Lecture&nbsp;auto.';
 $lang['Loop'] = 'En boucle';
 $lang['Fullscreen'] = 'Plein écran';
 $lang['Flash Player 9.0.16.60 or above is required.'] = 'Requiert Flash Player 9.0.16.60 ou supérieur.';
@@ -59,26 +63,26 @@ $lang['Forced video height'] = 'Hauteur forcée de la vidéo';
 $lang['Video default width'] = 'Largeur par défaut de la vidéo';
 $lang['Video default height'] = 'Hauteur par défaut de la vidéo';
 $lang['Volume [0-200]'] = 'Volume [0-200]';
-$lang['Onclick URL'] = 'URL à cliquer';		// je ne suis pas sûre de ce que ça veut dire
-$lang['or fullscreen or playpause or none'] = 'ou plein-écran ou marche-arrêt ou rien';  // il faut traduire ou laisser tel quel ?
-$lang['_blank'] = '_blank';			// dans le doute, je n'ai pas traduit
-$lang['_self'] = '_self';			// idem
-//tab2 : options -> subtab2 : Buffering
+$lang['Onclick URL'] = 'URL à atteindre sur simple clic';
+$lang['or fullscreen or playpause or none'] = 'ou fullscreen (plein-écran) ou playpause (marche-arrêt) ou rien';
+$lang['_blank'] = '_blank';
+$lang['_self'] = '_self';
+//tab2 : options -> subtab2 : Pré-chargement
 $lang['Video buffer size in seconds'] = 'taille du buffer vidéo en secondes';
 $lang['Default 5 seconds'] = 'Défaut 5 secondes';
-$lang['Video buffer percent message'] = 'Message du pourcentage du buffer vidéo';	// je ne sais pas si c'est ça ...
-$lang['Buffering _n_'] = 'Buffering _n_';	// dans le doute, je n'ai pas traduit
+$lang['Video buffer percent message'] = 'Message du pourcentage du buffer vidéo';
+$lang['Buffering _n_'] = 'Buffering _n_';
 $lang['Video buffer background'] = 'Arrière-plan du buffer vidéo';
-//tab2 : options -> subtab3 : Config by element
+//tab2 : options -> subtab3 : Configuration externe
 $lang['Use existing .txt to config'] = 'Utiliser un fichier .txt existant pour configurer';
 $lang['Filename.txt might be use as config.txt file'] = 'Nomdefichier.txt peut être utilisé en tant que fichier config.txt';
 $lang['Use existing .xml to config'] = 'Utiliser un fichier .xml existant pour configurer';
 $lang['Filename.xml might be use as config.xml file'] = 'Nomdefichier.xml peut être utilisé en tant que fichier config.xml';
-//tab2 : options -> subtab4 : Skin
+//tab2 : options -> subtab4 : Habillage
 $lang['Margin for skin'] = 'Marge du skin';
 $lang['Skin image'] = 'Image du skin';
 $lang['(URL of a non progressive jpg)'] = '(URL d\'un fichier jpg non progressif)';
-//tab2 : options -> subtab5 : Titleling
+//tab2 : options -> subtab5 : Titre
 $lang['Title'] = 'Titre';
 $lang['Title font size [12-72]'] = 'Taille de la police du titre [12-72]';
 $lang['Default size might be 20.'] = 'La taille par défaut pourrait être 20.';
@@ -86,16 +90,16 @@ $lang['Start image'] = 'Image de début';
 $lang['Title and start picture'] = 'Titre et image de début';
 $lang['Play icon in middle'] = 'Icône "Play" au milieu';
 $lang['Play icon transparency [0-100]'] = 'Transparence de l\'icône "Play" [0-100]';
-$lang['Load an image over video'] = 'Charge une image par-dessus la vidéo';	// je ne suis pas sûre d'avoir compris
+$lang['Load an image over video'] = 'Incruste une image au-dessus la vidéo';
 $lang['(URL|x|y : where x,y are the offsets to place the picture)'] = '(URL|x|y : où x et y sont les déplacements pour positionner l\'image)';
-//tab2 : options -> subtab6 : Subtitleling
+//tab2 : options -> subtab6 : Sous-titres
 $lang['Use subtitles'] = 'Utiliser les sous-titres';
 $lang['Filename.srt might be use for captioning'] = 'Nomdefichier.srt peut être utilisé pour les sous-titres';
 $lang['Subtitles font size [8-24]'] = 'Taille de la police des sous-titres [8-24]';
 $lang['Default size might be 11.'] = 'La taille par défaut pourrait être 11.';
-$lang['Subtitles URL file'] = 'URL du fichier de sous-titres';	// la traduction littérale serait "fichier d'URL des sous-titres" ; je doute ...
+$lang['Subtitles file URL'] = 'URL du fichier des sous-titres';
 $lang['URL of .srt'] = 'URL du fichier .srt';
-//tab2 : options -> subtab7 : Player and Buttons
+//tab2 : options -> subtab7 : Lecteur et boutons
 $lang['Show player'] = 'Affichage du player';
 $lang['Autohide'] = 'Masquage automatique';
 $lang['Always'] = 'Toujours';
@@ -109,39 +113,38 @@ $lang['Autohide delay [0-9999]'] = 'Délai du masquage automatique [0-9999]';
 $lang['Default 1500 milliseconds.'] = 'Défaut 1500 milliseconds.';
 $lang['Show stop button'] = 'Affiche le bouton Arrêt';
 $lang['Show volume'] = 'Affiche le volume';
-$lang['Subtitles and stop loading'] = 'Sous-titres et arrêt du chargement';	// à moins que ce ne soit "chargement des sous-titres et du bouton Arrêt" ?
-$lang['Show subtitles switch'] = 'Affiche le bouton des soustitres'; // retiré un 's' en trop dans le texte anglais
-$lang['Stop stops loading'] = 'Stop stops loading';	// comprend pas ; est-ce que ce ne serait pas plutôt "Show stop loading" (= "Affiche le bouton d'arrêt du chargement")
+
+$lang['Show subtitles switch'] = 'Affiche le bouton des soustitres'; 
+$lang['Stop stops loading'] = 'L\'arrêt stoppe le pré-chargement';
 $lang['Keyboard shortcuts'] = 'Raccourcis claviers';
-//tab2 : options -> subtab8 : Miscellaneous
+//tab2 : options -> subtab8 : Divers
 $lang['PHP streaming'] = 'Streaming PHP';
 $lang['RTMP server URL'] = 'URL du serveur RTMP';
 $lang['(Adobe Systems for streaming audio, video and data)'] = '(Adobe Systems pour le streaming audio, vidéo et données)';
-$lang['FYI: all these options might be used or NOT by the inbound player (template).'] = 'Pour information : toutes ces options peuvent être utilisées ou PAS par le player utilisé (template)'; // je n'ai pas trouvé ce que signifie "inbound" dans ce contexte ...
+$lang['FYI: all these options might be used or NOT by the inbound player (template).'] = 'Pour information : toutes ces options peuvent être utilisées ou NON par le player (lecteur présent dans le template)'; // "inbound" dans ce contexte ... (Lecteur entrant): Chaque template propose un lecteur spécifique (entrant dans le template) lequel peut donc utiliser ou non, tout ou parties des options 
 
-//Tab3 : colors
+//Tab3 : Les couleurs
 $lang['Players colours selection'] = 'Choix des couleurs du player';
 $lang['Background'] = 'Arrière-plan';
 $lang['Subtitles background'] = 'Arrière-plan des sous-titres';
-$lang['Top border fading'] = 'Bordure supérieure';	// je ne sais pas ce que signifie "fading" dans ce contexte ... la bordure est en dégradé/transparente ?
+$lang['Top border fading'] = 'Fondu de la bordure supérieure';
 $lang['Player'] = 'Player';
-$lang['Bottom border fading'] = 'Bordure inférieure';	// idem bordure supérieure
+$lang['Bottom border fading'] = 'Fondu de la bordure inférieure';
 $lang['Loading bar'] = 'Barre de chargement';
 $lang['Player buttons'] = 'Boutons du player';
-$lang['Leftbar gradient fading'] = 'Dégradé barre de gauche';	// s'agit-il de la bordure ou d'autre chose ? même problème que ci-dessus pour "fading"
+$lang['Leftbar gradient fading'] = 'Dégradé barre de gauche';	// A priori rien à voir avec la description
 $lang['Hover player buttons'] = 'Survol des boutons du player';
-$lang['Rightbar gradient fading'] = 'Dégradé barre de droite';	// idem leftbar
+$lang['Rightbar gradient fading'] = 'Dégradé barre de droite';	// C'est le slider en fait (Cf. la doc)
 $lang['Buffer'] = 'Buffer';
-$lang['Hover bar gradient'] = 'Survol de la barre de dégradé';	// ???
+$lang['Hover bar gradient'] = 'Survol de la barre de dégradé';	// Usage à revoir
 $lang['Buffer background'] = 'Arrière-plan du buffer';
 $lang['Play icon'] = 'Icône "Play"';
 $lang['Title'] = 'Titre';
 $lang['Play icon background'] = 'Arrière-plan de l\'icône "Play"';
 $lang['Subtitles'] = 'Sous-titres';
-$lang['Color usage might be just for information (Players could just ignore them or use them differently)'] = 'Les couleurs peuvent n\'être utilisées qu\'à titre d\'information (Les players peuvent les ignorer ou les utiliser différemment';
+$lang['Color usage might be just for information (Players could just ignore them or use them differently)'] = 'Les couleurs peuvent n\'être utilisées qu\'à titre d\'information (Les lecteurs (players) peuvent les ignorer ou les utiliser différemment)';
 
-//Tab4 : curtain
-$lang['Active curtains'] = 'Active les rideaux';	// je ne sais pas ce que c'est ...
-$lang['.png without transparency are recommended. Maybe you can change a set of curtains by yours.'] = '.png sans transparence est recommandée. Peut-être pouvez-vous remplacer un jeu de rideaux par un des vôtres';	// je suis complètement larguée ! LOL
-
+//Tab4 : Les rideaux (effet théâtral)
+$lang['Active curtains'] = 'Active les rideaux';
+$lang['.png without transparency are recommended. Maybe you can change a set of curtains by yours.'] = 'Les .png sans transparence sont recommandés. Eventuellement vous pouvez remplacer un jeu de rideaux par le vôtre.';
 ?>

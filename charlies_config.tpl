@@ -210,7 +210,7 @@ jQuery().ready(function(){ldelim}
 			<input type="text" id="srtsize" maxlength="2" size="8" name="srtsize" value="{$Charlies.srtsize}" title="{'Default size might be 11.'|@translate}" />
 		</li>
 		<li>
-			<p class="property" style="text-align:center; width:100%;">{'Subtitles URL file'|@translate} <span style="font-weight:normal;font-size:0.8;font-style:italic;">{'(URL of .srt)'|@translate}</span><br />
+			<p class="property" style="text-align:center; width:100%;">{'Subtitles file URL'|@translate} <span style="font-weight:normal;font-size:0.8;font-style:italic;">{'(URL of .srt)'|@translate}</span><br />
 			<input type="text" size="80" id="srturl" name="srturl" value="{$Charlies.srturl}" /></p>
 		</li>
 	</ul>
@@ -261,7 +261,7 @@ jQuery().ready(function(){ldelim}
 			<input type="radio" value="0" name="showvolume" {if ($Charlies.showvolume==0)} checked="checked" {/if}/>{'Off'|@translate}
 		</td></tr></table>
 		<li><table summary="Subtitles and stop loading"><tr><td style="width:285px;">
-			<span class="property">{'Show substitles switch'|@translate}</span>
+			<span class="property">{'Show subtitles switch'|@translate}</span>
 			<input type="radio" value="1" name="showswitchsubtitles" {if ($Charlies.showswitchsubtitles==1)} checked="checked" {/if}/>{'On'|@translate}
 			<input type="radio" value="0" name="showswitchsubtitles" {if ($Charlies.showswitchsubtitles==0)} checked="checked" {/if}/>{'Off'|@translate}
 		</td>

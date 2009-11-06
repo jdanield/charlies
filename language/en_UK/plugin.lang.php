@@ -1,6 +1,10 @@
 <?php
 //Plugin Name: Charlies content
 //File charlies_config.php
+
+// More info on http://flv-player.net/en/players/maxi/documentation/
+
+
 $lang['Templates configuration'] = 'Templates configuration';
 $lang['Players options'] = 'Players options';
 $lang['Players colors'] = 'Players colors';
@@ -93,7 +97,7 @@ $lang['Use subtitles'] = 'Use subtitles';
 $lang['Filename.srt might be use for captioning'] = 'Filename.srt might be use for captioning';
 $lang['Subtitles font size [8-24]'] = 'Subtitles font size [8-24]';
 $lang['Default size might be 11.'] = 'Default size might be 11.';
-$lang['Subtitles URL file'] = 'Subtitles URL file';
+$lang['Subtitles file URL'] = 'Subtitles file URL';
 $lang['URL of .srt'] = 'URL of .srt';
 //tab2 : options -> subtab7 : Player and Buttons
 $lang['Show player'] = 'Show player';
@@ -109,8 +113,8 @@ $lang['Autohide delay [0-9999]'] = 'Autohide delay [0-9999]';
 $lang['Default 1500 milliseconds.'] = 'Default 1500 milliseconds.';
 $lang['Show stop button'] = 'Show stop button';
 $lang['Show volume'] = 'Show volume';
-$lang['Subtitles and stop loading'] = 'Subtitles and stop loading';
-$lang['Show substitles switch'] = 'Show substitles switch';
+
+$lang['Show subtitles switch'] = 'Show subtitles switch';
 $lang['Stop stops loading'] = 'Stop stops loading';
 $lang['Keyboard shortcuts'] = 'Keyboard shortcuts';
 //tab2 : options -> subtab8 : Miscellaneous

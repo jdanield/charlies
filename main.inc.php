@@ -1,10 +1,10 @@
 <?php /*
 Plugin Name: Charlies content
-Version: 2.0.e
+Version: 2.0.f
 Description: Charlies content is a global solution for none picture files.
-Plugin URI: http://fr.piwigo.org/ext/extension_view.php?eid=119
-Author: VDigital, rvelices (PhpWebGallery team)
-Author URI: http://www.phpwebgallery.net
+Plugin URI: http://piwigo.org/ext/extension_view.php?eid=119
+Author: VDigital, rvelices (Piwigo team)
+Author URI: http://piwigo.org/
 */
 /* Synopsis
 1 - Based on file extension...
@@ -15,6 +15,10 @@ http://getid3.sourceforge.net/
 http://flv-player.net/players/maxi/documentation/
 
 /** History ***************
+  2010-02-08 2.0.f (The reset version)
+						 includes Reset ALL Charlies' configuration in second tab
+						 translation system (Thanks to ddtddt).
+						 minor language/plugin corrections.
   2009-05-24 2.0.e (Called ngoc version)
 	           buffermessage correction for flv
 						 The lumenation bypass is maintain (but no longer needed with recent Piwigo versions)
@@ -55,9 +59,16 @@ http://flv-player.net/players/maxi/documentation/
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('CHARLIES_DIR' , basename(dirname(__FILE__)));
 define('CHARLIES_PATH' , PHPWG_PLUGINS_PATH . CHARLIES_DIR . '/');
-define('CHARLIES_VER' , '2.0.e');
+define('CHARLIES_VER' , '2.0.f');
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x);
+// Un code review s'impose grave !!!
+if ( isset($_POST['reset']) and defined('IN_ADMIN')
+    and isset($_GET['section']) and $_GET['section']=='charlies_content/charlies_config.php' ) {
+		$charlie = array();
+		if (!isset($infos)) $infos = array();
+		array_push($infos, l10n('Your configuration configuration has been reset.'));
+}
 if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER) 
 {
 	$charlie['version'] = CHARLIES_VER;

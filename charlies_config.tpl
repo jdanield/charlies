@@ -291,7 +291,8 @@ jQuery().ready(function(){ldelim}
 		</li>
 	</ul>
 	</div>
-<input type="submit" value="{'Save Charlies\' configuration'|@translate}" name="submit" class="submit"/>
+<input type="submit" value="{'Save Charlies\' configuration'|@translate}" name="submit" class="submit"/><br />
+<input type="submit" value="{'Reset ALL Charlies\' configuration'|@translate}" name="reset" class="submit" onclick="return confirm('{'Reset ALL Confirmation'|@translate|@escape:javascript}');"/>
 	<p class="bot">[ {'FYI: all these options might be used or NOT by the inbound player (template).'|@translate} ]<br />
 	[ {'Note: These options are available with the Maxi FLV Player. More details on all theses options on:'|@translate} 
 	<a class="external" href="http://flv-player.net/en/players/maxi/documentation/" title="Documentation">FLV Player</a> (neolao production). ]</p>

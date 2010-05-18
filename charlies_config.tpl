@@ -447,5 +447,8 @@ jQuery().ready(function(){ldelim}
       href="{$CHARLIES_PATH|@cat:'farbtastic/farbtastic.css'}">
 <link rel="stylesheet" type="text/css" href="{$CHARLIES_PATH|@cat:'charlies.css'}"> 
 {/html_head}
+
+{known_script id="jquery.ui" src=$ROOT_URL|@cat:"themes/default/js/ui/packed/ui.core.packed.js"}
+{known_script id="jquery.ui.tabs" src=$ROOT_URL|@cat:"themes/default/js/ui/packed/ui.tabs.packed.js"}
 {known_script id="jquery.ui" src=$ROOT_URL|@cat:"template-common/lib/ui/ui.core.packed.js"}
 {known_script id="jquery.ui.tabs" src=$ROOT_URL|@cat:"template-common/lib/ui/ui.tabs.packed.js"}

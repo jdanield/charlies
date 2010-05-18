@@ -1,6 +1,6 @@
 <?php /*
 Plugin Name: Charlies content
-Version: 2.0.f
+Version: 2.1.a
 Description: Charlies content is a global solution for none picture files.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=119
 Author: VDigital, rvelices (Piwigo team)
@@ -15,6 +15,8 @@ http://getid3.sourceforge.net/
 http://flv-player.net/players/maxi/documentation/
 
 /** History ***************
+  2010-05-18 2.1.a (The basic 2.1 version)
+						 Just support 2.1.
   2010-02-08 2.0.f (The reset version)
 						 includes Reset ALL Charlies' configuration in second tab
 						 translation system (Thanks to ddtddt).
@@ -59,7 +61,7 @@ http://flv-player.net/players/maxi/documentation/
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('CHARLIES_DIR' , basename(dirname(__FILE__)));
 define('CHARLIES_PATH' , PHPWG_PLUGINS_PATH . CHARLIES_DIR . '/');
-define('CHARLIES_VER' , '2.0.f');
+define('CHARLIES_VER' , '2.1.a');
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x);
 // Un code review s'impose grave !!!

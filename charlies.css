@@ -60,8 +60,8 @@ a.xl.selected { border:0; color: #666; background-image: none;}
 .Charlies legend { padding: 0px 8px;}
 .content .errors, .content .infos { position:relative;}
 
-#theAdminPage  .ct  { background: transparent url(./city-lights.jpg) no-repeat scroll right top; height:114px;}
-#theAdminPage .ct2 { background: transparent url(./city-lights-2.jpg) no-repeat scroll right top; height:114px;}
+#theAdminPage  #pwgMain  { background: url("./city-lights-2.jpg") no-repeat scroll right -48px transparent; height:114px;}
+#theAdminPage  #pwgMain  { background: url("./city-lights.jpg") no-repeat scroll right -55px transparent; height:114px;}
 #theAdminPage  #charlie .input { border-top: 1px solid #666; border-bottom: 0; margin-bottom:1px;}
 #theAdminPage  #charlie .i15 { border-top: 1px solid #666; border-bottom: 1px solid #666; margin-bottom:1px;}
 #theAdminPage  #charlie .none { border: 0; }
@@ -76,7 +76,7 @@ a.xl.selected { border:0; color: #666; background-image: none;}
 #theAdminPage .colorwell-selected { border: 3px double #F36; font-weight: bold; }
 #theAdminPage .radio { margin: 0 10px 0 50px; }
 #theAdminPage .content div.titrePage { height:20px; }
-#theAdminPage  #the_page .content { margin-top: 0px;}
+/* #theAdminPage  #the_page .content { margin-top: 0px;} */
 #theAdminPage #the_page #theHeader { height: 114px; min-height: 114px; max-height: 114px; }
 #theAdminPage .Charlies input[type="submit"] { display:block; margin:0 5px 0 auto; padding:3px 40px;}
 .content form.properties li, form#update ul {clear:none;}

@@ -34,7 +34,7 @@ $lang['You are Adviser and you are not authorized to change this configuration.'
 $lang['Your configuration is saved.'] = 'Votre configuration est sauvegardée.';
 
 //File charlies_config.tpl
-$lang['Save Charlies\' configuration'] = 'Sauvegarde la configuration de Charlies\'';
+$lang['Save Charlies\' configuration'] = 'Sauvegarder la configuration de Charlies\'';
 $lang['On'] = 'Oui';
 $lang['Off'] = 'Non';
 //tab1 : templates (Modèles)
@@ -122,7 +122,8 @@ $lang['PHP streaming'] = 'Streaming PHP';
 $lang['RTMP server URL'] = 'URL du serveur RTMP';
 $lang['(Adobe Systems for streaming audio, video and data)'] = '(Adobe Systems pour le streaming audio, vidéo et données)';
 $lang['FYI: all these options might be used or NOT by the inbound player (template).'] = 'Pour information : toutes ces options peuvent être utilisées ou NON par le player (lecteur présent dans le template)'; // "inbound" dans ce contexte ... (Lecteur entrant): Chaque template propose un lecteur spécifique (entrant dans le template) lequel peut donc utiliser ou non, tout ou parties des options 
-
+$lang['Reset ALL Charlies\' configuration'] = 'Restauration TOTALE de la configuration par défaut';
+$lang['Reset ALL Confirmation'] = 'Confirmez-vous le rétablissement de la configuration par défaut?'; 
 //Tab3 : Les couleurs
 $lang['Players colours selection'] = 'Choix des couleurs du player';
 $lang['Background'] = 'Arrière-plan';

@@ -122,6 +122,8 @@ $lang['PHP streaming'] = 'PHP streaming';
 $lang['RTMP server URL'] = 'RTMP server URL';
 $lang['(Adobe Systems for streaming audio, video and data)'] = '(Adobe Systems for streaming audio, video and data)';
 $lang['FYI: all these options might be used or NOT by the inbound player (template).'] = 'FYI: all these options might be used or NOT by the inbound player (template).';
+$lang['Reset ALL Charlies\' configuration'] = 'Reset ALL Charlies\' configuration';
+$lang['Reset ALL Confirmation'] = 'Reset ALL Confirmation'; 
 
 //Tab3 : colors
 $lang['Players colours selection'] = 'Players colours selection';

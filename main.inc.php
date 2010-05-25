@@ -1,6 +1,6 @@
 <?php /*
 Plugin Name: Charlies content
-Version: 2.1.a
+Version: 2.1.b
 Description: Charlies content is a global solution for none picture files.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=119
 Author: VDigital, rvelices (Piwigo team)
@@ -14,43 +14,6 @@ Dependencies:
 http://getid3.sourceforge.net/
 http://flv-player.net/players/maxi/documentation/
 
-/** History ***************
-  2010-05-18 2.1.a (The basic 2.1 version)
-						 Just support 2.1.
-  2010-02-08 2.0.f (The reset version)
-						 includes Reset ALL Charlies' configuration in second tab
-						 translation system (Thanks to ddtddt).
-						 minor language/plugin corrections.
-  2009-05-24 2.0.e (Called ngoc version)
-	           buffermessage correction for flv
-						 The lumenation bypass is maintain (but no longer needed with recent Piwigo versions)
-						 getID3 v2.0.0-b5 not tested => Still in v2.0.0-b4
-  2009-05-24 2.0.d (Called lumenation bypass)
-	           some url were generated with https://
-  2009-04-13 2.0.c 
-	           Flipflip proposal to exclude GETID3 for some extends
-						 nolive proposal to support GPX extensions
-						 Forced width/height are supported by flvstreamer
-  2009-02-15 2.0.b 
-	           Admin configuration menu
-						 And related changes (New version of GetID3)
-
-  2008-10-30 2.0.a (Not distributed)
-             Smarty version for Piwigo (Don't use it with PhpWebGallery 1.7.x)
-  2008/03/26: error_reporting(E_ERROR | E_WARNING | E_PARSE);
-             during getid3 call (Only one referenced case).             
-  2008/02/22:
- * 3GP support : video streams from mobile phones.
-   There are two different standards for this format:
-   3gp for GSM-based Phones, or 3g2 for CDMA-based Phones.
- * $page['slideshow'] active/inactive support for "Pause" enhancement 
-   so Charlies won't act on active slideshow but will act on Slideshow pause
-
-  2007-10-21 1.7.a First release for PhpWebGallery 1.7
-  2006-01-06 Video Integrator and followed by Media Integrator
-  and previously Kitof's Original MOD.
- **/
-
 /** 
  * All media file have to be broadcasted via an embedded player
  * so link its extention to a player name as to be define
@@ -61,91 +24,91 @@ http://flv-player.net/players/maxi/documentation/
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('CHARLIES_DIR' , basename(dirname(__FILE__)));
 define('CHARLIES_PATH' , PHPWG_PLUGINS_PATH . CHARLIES_DIR . '/');
-define('CHARLIES_VER' , '2.1.a');
+define('CHARLIES_VER' , '2.1.b');
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x);
-// Un code review s'impose grave !!!
+
 if ( isset($_POST['reset']) and defined('IN_ADMIN')
     and isset($_GET['section']) and $_GET['section']=='charlies_content/charlies_config.php' ) {
-		$charlie = array();
+		unset( $charlie );
 		if (!isset($infos)) $infos = array();
 		array_push($infos, l10n('Your configuration configuration has been reset.'));
 }
 if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER) 
 {
-	$charlie['version'] = CHARLIES_VER;
-	if (!isset($charlie['FlvStreamer'])) $charlie['FlvStreamer'] = array('flv',); 
+	$default = array(
+			'autoload'  		 	=> 1,
+			'autoplay'  		 	=> 1,
+			'loop'  		 		=> 1,
+			'full'  		 		=> 1,
+			'forced_width'  		=> '',
+			'forced_height'  		=> '',
+			'video_default_width'  	=>  320,
+			'video_default_height'  =>  240,
+			'volume'  		 		=> 150,
+			'onclick'  		 		=> 'playpause',
+			'onclicktarget'  		=> 0,
+			'ondoubleclick'  		=> 'fullscreen',
+			'ondoubleclicktarget'  	=> 0,
+			'buffer'  		 		=> 10,
+			'buffermessage'  		=> 'Buffering _n_',
+			'buffershowbg'  		=> 0,
+			'config'  		 		=> 0,
+			'configxml'  		 	=> 0,
+			'margin'  		 		=> 8,
+			'skin'  		 		=> '', /* './plugins/charlies_content/skin.jpg', */
+			'title'  		 		=> '/n/n/nCharlies\' content ',
+			'titlesize'  		 	=> 26,
+			'start_image'  		 	=> './plugins/charlies_content/city-lights.jpg',
+			'showtitleandstartimage'=> 0,
+			'showiconplay'  		=> 0,
+			'iconplaybgalpha'  		=> 20,
+			'showplayer'  		 	=> 1,
+			'showloading'  		 	=> 1,
+			'showmouse'  		 	=> 1,
+			'showtime'  		 	=> 2,
+			'srt'					=> 0,
+			'playeralpha'  		 	=> 20,
+			'playertimeout'  		=> 1500,
+			'showstop'  		 	=> 1,
+			'showvolume'  		 	=> 1,
+			'showswitchsubtitles'  	=> 0,
+			'loadonstop'  		 	=> 0,
+			'shortcut'  		 	=> 1,
+			'phpstream'  		 	=> 1,
+			'curtain'  		 		=> 'none',
+			'start_image'  		 	=>  CHARLIES_PATH . 'background.jpg',
+			'color0'  		 		=> '#111111',
+			'color1'  		 		=> '#ff7700',
+			'color2'  		 		=> '#444444',
+			'color3'  		 		=> '#ff3333',
+			'color4'  		 		=> '#ff3363',
+			'color5'  		 		=> '#ff7700',
+			'color6'  		 		=> '#111111',
+			'color7'  		 		=> '#ff3333',
+			'color8'  		 		=> '#ff3363',
+			'color9'  		 		=> '#111111',
+			'color10'  		 		=> '#444444',
+			'color11'  		 		=> '#ff3333',
+			'color12'  		 		=> '#ff3363',
+			'color13'  		 		=> '#ff7700',
+			'color14'  		 		=> '#444444',
+			'color15'  		 		=> '#ff3333',
+			'color16'  		 		=> '#111111',
+		);
+	if (!isset($charlie['version'])) $charlie = $default;
+	else $charlie = array_merge( $default, $charlie );
+	if (!isset($charlie['FlvStreamer'])) 	$charlie['FlvStreamer'] = array('flv',); 
 	if (!isset($charlie['Flash'])) 			$charlie['Flash'] = array('swf',); 
 	if (!isset($charlie['Music'])) 			$charlie['Music'] = array('pls','m3u','wav','mid','au','aif',); 
-	if (!isset($charlie['mp3Player'])) 	$charlie['mp3Player'] = array('mp3',); 
+	if (!isset($charlie['mp3Player'])) 		$charlie['mp3Player'] = array('mp3',); 
 	if (!isset($charlie['Acrobat'])) 		$charlie['Acrobat'] = array('pdf',); 
-	if (!isset($charlie['WMplayer'])) 	$charlie['WMplayer'] = array('asf','wmv','divx','xvid',); 
-	if (!isset($charlie['QuickTime'])) 	$charlie['QuickTime'] = 
+	if (!isset($charlie['WMplayer'])) 		$charlie['WMplayer'] = array('asf','wmv','divx','xvid',); 
+	if (!isset($charlie['QuickTime'])) 		$charlie['QuickTime'] = 
 	array('aiff','aac','bmp','gsm','mov','mpg','mpeg','mp4','m4a','psd','qt','qtif','qif','qti','snd','tif','tiff','3g2','3pg');
 	if (!isset($charlie['Archive'])) 		$charlie['Archive'] = array('zip','rar',); 
-	if (!isset($charlie['GPS'])) 				$charlie['GPS'] = array('gpx',); 
-
-	if (!isset($charlie['autoplay'])) 	$charlie['autoplay'] = 1;
-	if (!isset($charlie['loop'])) 			$charlie['loop'] = 1;
-	if (!isset($charlie['full'])) 			$charlie['full'] = 1;
-	if (!isset($charlie['forced_width'])) 	$charlie['forced_width'] = '';
-	if (!isset($charlie['forced_height'])) 	$charlie['forced_height'] = '';
-	if (!isset($charlie['video_default_width'])) 		$charlie['video_default_width'] =  320;
-	if (!isset($charlie['video_default_height']))		$charlie['video_default_height'] =  240;
-	if (!isset($charlie['volume'])) 		$charlie['volume'] = 150;
-	if (!isset($charlie['onclick'])) 		$charlie['onclick'] = 'playpause';
-	if (!isset($charlie['onclicktarget'])) 	$charlie['onclicktarget'] = 0;
-	if (!isset($charlie['ondoubleclick'])) 	$charlie['ondoubleclick'] = 'fullscreen';
-	if (!isset($charlie['ondoubleclicktarget'])) 		$charlie['ondoubleclicktarget'] = 0;
-	if (!isset($charlie['buffer'])) 		$charlie['buffer'] = 10;
-	if (!isset($charlie['buffermessage'])) 	$charlie['buffermessage'] = 'Buffering _n_';
-	if ($charlie['buffermessage']==1) 	$charlie['buffermessage'] = 'Buffering _n_';
-	if (!isset($charlie['buffershowbg'])) 	$charlie['buffershowbg'] = 0;
-	if (!isset($charlie['config'])) 		$charlie['config'] = 0;
-	if (!isset($charlie['configxml'])) 	$charlie['configxml'] = 0;
-	if (!isset($charlie['margin'])) 		$charlie['margin'] = 8;
-	if (!isset($charlie['skin'])) 			$charlie['skin'] = ''; // './plugins/charlies_content/skin.jpg';
-	if (!isset($charlie['title'])) 			$charlie['title'] = '/n/n/nCharlies\' content ';
-	if (!isset($charlie['titlesize'])) 	$charlie['titlesize'] = 26;
-	if (!isset($charlie['start_image'])) 		$charlie['start_image'] = './plugins/charlies_content/city-lights.jpg';
-	if (!isset($charlie['showtitleandstartimage'])) 	$charlie['showtitleandstartimage'] = 0;
-	if (!isset($charlie['showiconplay'])) 		$charlie['showiconplay'] = 0;
-	if (!isset($charlie['iconplaybgalpha'])) 	$charlie['iconplaybgalpha'] = 20;
-	if (!isset($charlie['srt'])) 		$charlie['onclick'] = 0;
-	if (!isset($charlie['showplayer'])) 		$charlie['showplayer'] = 1;
-	if (!isset($charlie['showloading'])) 		$charlie['showloading'] = 1;
-	if (!isset($charlie['showmouse'])) 		$charlie['showmouse'] = 1;
-	if (!isset($charlie['showtime'])) 		$charlie['showtime'] = 2;
-	if (!isset($charlie['playeralpha'])) 		$charlie['playeralpha'] = 20;
-	if (!isset($charlie['playertimeout'])) 		$charlie['playertimeout'] = 1500;
-	if (!isset($charlie['showstop'])) 	$charlie['showstop'] = 1;
-	if (!isset($charlie['showvolume'])) $charlie['showvolume'] = 1;
-	if (!isset($charlie['showswitchsubtitles'])) 	$charlie['showswitchsubtitles'] = 0;
-	if (!isset($charlie['loadonstop'])) $charlie['loadonstop'] = 0;
-	if (!isset($charlie['shortcut'])) 	$charlie['shortcut'] = 1;
-	if (!isset($charlie['phpstream'])) 		$charlie['phpstream'] = 1;
-	if (!isset($charlie['curtain'])) 		$charlie['curtain'] = 'none';
-	if (!isset($charlie['start_image']))	$charlie['start_image'] =  CHARLIES_PATH . 'background.jpg';
-	if (!isset($charlie['color16']))
-	{
-		$charlie['color0'] = '#111111';
-		$charlie['color1'] = '#ff7700';
-		$charlie['color2'] = '#444444';
-		$charlie['color3'] = '#ff3333';
-		$charlie['color4'] = '#ff3363';
-		$charlie['color5'] = '#ff7700';
-		$charlie['color6'] = '#111111';
-		$charlie['color7'] = '#ff3333';
-		$charlie['color8'] = '#ff3363';
-		$charlie['color9'] = '#111111';
-		$charlie['color10'] = '#444444';
-		$charlie['color11'] = '#ff3333';
-		$charlie['color12'] = '#ff3363';
-		$charlie['color13'] = '#ff7700';
-		$charlie['color14'] = '#444444';
-		$charlie['color15'] = '#ff3333';
-		$charlie['color16'] = '#111111';
-	}
+	if (!isset($charlie['GPS'])) 			$charlie['GPS'] = array('gpx',); 
+	$charlie['version'] = CHARLIES_VER;
 
 	$dir = $conf['local_data_dir'].'/plugins/';
 	@mkdir($dir);
@@ -161,14 +124,16 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
    * Player name is in lower-case followed by _content.tpl
    */
 
-add_event_handler('render_element_content', 'render_Charlie_element_content', 40, 2 );
-add_event_handler('get_admin_plugin_menu_links', 'Charlie_plugin_admin_menu');
 $all = array();
 foreach ($charlie as $ext) { 
-  if ( is_array($ext)) $all = array_merge ($all, $ext); 
+  if ( is_array($ext) ) { $all = array_merge ($all, $ext); }
 }
 $conf['file_ext'] = array_merge (
     $conf['file_ext'], $all, array_map('strtoupper', $all) );
+
+# $charlie['all'] = $all;
+add_event_handler('render_element_content', 'render_Charlie_element_content', 40, 2 );
+add_event_handler('get_admin_plugin_menu_links', 'Charlie_plugin_admin_menu');
 
 function Charlie_plugin_admin_menu($menu)
 {
@@ -186,15 +151,15 @@ function render_Charlie_element_content($content, $picture)
 {
   global $template, $charlie, $page, $conf;
   if ( isset($page['slideshow']) and $page['slideshow'] ) return $content;
-  if ( @$picture['is_picture'] ) return $content; 
+  if ( @$picture['is_picture'] ) return $content;
   $all = array();
-  foreach ($charlie as $ext) { if (is_array($ext)) $all = array_merge ($all, $ext); }
-  $charlie['all'] = $all;
+  foreach ($charlie as $ext) { 
+	if (is_array($ext)) $all = array_merge ($all, $ext); 
+  }
   $extension = strtolower(get_extension($picture['file']));
-  if (!in_array($extension, $charlie['all']))
+  if (!in_array($extension, $all))
   { // in fact nothing to do (Lucky Charlies)
     return $content; }
-  unset($charlie['all']);
   include_once(CHARLIES_PATH.'charlies.inc.php');
   return Charlies_content($picture);
 }

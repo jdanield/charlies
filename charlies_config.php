@@ -4,8 +4,8 @@
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 if (!defined('IN_ADMIN') or !IN_ADMIN) die('Hacking attempt!');
 load_language('plugin.lang', CHARLIES_PATH);
-$x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
-if ($x!==false) $charlie = unserialize($x); else $charlie = array();
+
+global $charlie;
 $errors = array();
 $infos = array();
 
@@ -16,7 +16,7 @@ $curtains['none'] = 'none';
 // Existing first
 $extensions = array();
 foreach ($charlie as $tpl => $ext) {
-	if (is_array($ext)) { 
+	if (is_array($ext) and $tpl != 'all') { 
 		$players[] = array( 'name' => $tpl, 'ext' => $ext);
 		$extensions = array_merge($extensions, $ext);
 	}
@@ -130,6 +130,7 @@ if ($sub and isset($_POST['from']) and $_POST['from']=='curtain') {
   $charlie['curtain'] = $_POST['curtain'];
 }
 $charlie['title'] = stripslashes(htmlspecialchars(strip_tags($charlie['title'])));
+
 // Submit and errors
 if ( $sub )
 {
@@ -139,7 +140,7 @@ if ( $sub )
 // Submit and Advisor => Thanks
 if ( $sub and is_adviser() and count($errors) == 0 )
 	array_push($infos, l10n('You are Adviser and you are not authorized to change this configuration.'));
-
+unset ( $charlie['all'] );
 // Submit and not Advisor => Update Config table
 if ( $sub and !is_adviser() and count($errors) == 0 )
 {
@@ -151,11 +152,13 @@ if ( $sub and !is_adviser() and count($errors) == 0 )
 	array_push($infos, l10n('Your configuration is saved.'));
 }
 // Send data
+
 $template->set_filenames(array(
     'plugin_admin_content' => dirname(__FILE__) . '/charlies_config.tpl'));
 if (count($errors) != 0) $template->assign('errors', $errors);
 if (count($infos) != 0) $template->assign('infos', $infos);
 if ($charlie['onclick']==0) $charlie['onclick'] =  'playpause'; // ???
+
 $template->assign(array(
 	'Charlies' => $charlie,
 	'CHARLIES_PATH' => CHARLIES_PATH,
@@ -164,5 +167,6 @@ $template->assign(array(
 	'extensions' => $extensions,
 	) );
 $template->assign_var_from_handle('ADMIN_CONTENT', 'plugin_admin_content');
+
 //var_dump($charlie);
 ?>

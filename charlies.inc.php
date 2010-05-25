@@ -7,7 +7,6 @@
 function Charlies_content($picture)
 {
   global $page, $template, $charlie, $conf;
-
   // Which player is needed?
   $player = '';
   $extension = strtolower(get_extension($picture['file']));
@@ -75,7 +74,7 @@ function Charlies_content($picture)
   }
   $bg = get_root_url().'plugins/charlies_content/background.png';
 
-  //var_dump($fileinfo);
+  # 	var_dump($fileinfo);
 
   // Assign as much we can to offer different fields to display
   $template->assign( array(
@@ -109,9 +108,7 @@ function Charlies_content($picture)
 			'Charlies' => $charlie,
       )
     );
-
   $ret = $template->parse('default_content', true);
-//  echo $ret;
   return $ret;
 }
 ?>

@@ -2,7 +2,7 @@
 	<h2>Charlies' content [{$Charlies.version}]</h2>
 </div>
 
-<form method="post" action="" class="Charlies properties">
+<form method="post" action="" class="Charlies properties{if !empty($themeconf.name)} {$themeconf.name}{/if}{if !empty($themeconf.id)} {$themeconf.id}{/if}">
 
 {if $page == 'templates'}
 <script type="text/javascript">
@@ -38,11 +38,6 @@ jQuery().ready(function(){ldelim}
 {/if}
 
 {if $page == 'options'}
-<script type="text/javascript">
-jQuery().ready(function(){ldelim}
-	$('#theAdminPage .titrePage h2').addClass('ct').fadeOut(10).fadeIn(2400);
-});
-</script>
 <fieldset>
 	<legend>{'Charlies players configuration'|@translate}</legend>
 
@@ -300,8 +295,8 @@ jQuery().ready(function(){ldelim}
 
 {literal}
 <script type="text/javascript">
-  $(document).ready(function(){
-    $("#main-options").tabs();
+  jQuery(document).ready(function(){
+    jQuery("#main-options").tabs();
   });
 </script>
 {/literal}
@@ -385,22 +380,21 @@ jQuery().ready(function(){ldelim}
 
 {literal}
 <script type="text/javascript">
-  $(document).ready(function() {
+  jQuery(document).ready(function() {
     var f = $.farbtastic('#picker');
     var p = $('#picker').css('opacity', 1);
     var selected;
-    $('.colorwell')
+    jQuery('.colorwell')
       .each(function () { f.linkTo(this); $(this).css('opacity', 0.50); })
       .focus(function() {
         if (selected) {
-          $(selected).css('opacity', 0.90).removeClass('colorwell-selected');
+          jQuery(selected).css('opacity', 0.90).removeClass('colorwell-selected');
         }
         f.linkTo(this);
         p.css('opacity', 1);
-        $(selected = this).css('opacity', 1).addClass('colorwell-selected');
+        jQuery(selected = this).css('opacity', 1).addClass('colorwell-selected');
       });
   });
-	$('#theAdminPage .titrePage h2').addClass('ct2').fadeOut(10).fadeIn(1800);
 </script>
 {/literal}
 {/if}
@@ -434,10 +428,18 @@ jQuery().ready(function(){ldelim}
 </form>
 
 <script type="text/javascript">
-  $(document).ready(function() {ldelim}
-		$(".infos").fadeOut(800).fadeIn(1200).fadeOut(400).fadeIn(800).fadeOut(400);
-		$(".errors").fadeOut(200).fadeIn(200).fadeOut(300).fadeIn(300).fadeOut(400).fadeIn(400); 
-  });
+jQuery(document).ready(function() {ldelim}
+	jQuery(".infos").fadeOut(800).fadeIn(1200).fadeOut(400).fadeIn(800).fadeOut(400);
+	jQuery(".errors").fadeOut(200).fadeIn(200).fadeOut(300).fadeIn(300).fadeOut(400).fadeIn(400); 
+	jQuery('#theAdminPage #the_page').addClass('{$themeconf.name}');
+{if $page == 'options'}
+	jQuery('#theAdminPage #the_page h2').addClass('cl2');
+{/if}{if $page == 'colors'}
+	jQuery('#theAdminPage #the_page.clear h2').addClass('cl3');
+{/if}{if $page == 'curtain'}
+	jQuery('#theAdminPage #the_page.roma h2').addClass('cl2');
+{/if}});
+	jQuery('#theAdminPage #the_page h2').fadeIn(1800);
 </script>
 
 {html_head}
@@ -450,5 +452,3 @@ jQuery().ready(function(){ldelim}
 
 {known_script id="jquery.ui" src=$ROOT_URL|@cat:"themes/default/js/ui/packed/ui.core.packed.js"}
 {known_script id="jquery.ui.tabs" src=$ROOT_URL|@cat:"themes/default/js/ui/packed/ui.tabs.packed.js"}
-{known_script id="jquery.ui" src=$ROOT_URL|@cat:"template-common/lib/ui/ui.core.packed.js"}
-{known_script id="jquery.ui.tabs" src=$ROOT_URL|@cat:"template-common/lib/ui/ui.tabs.packed.js"}

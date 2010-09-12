@@ -1,0 +1,1 @@
+Átfogó megoldás nem kép típusú média fájlok használatához.

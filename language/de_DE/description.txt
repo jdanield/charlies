@@ -1,0 +1,1 @@
+Charlies content ist eine Lösung, um mit Piwigo andere Dateien als Bilder darzustellen.

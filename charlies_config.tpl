@@ -1,5 +1,5 @@
 <div class="titrePage">
-	<h2>Charlies' content [{$Charlies.version}]</h2>
+	<h2>Charlies' content</h2>
 </div>
 
 <form method="post" action="" class="Charlies properties{if !empty($themeconf.name)} {$themeconf.name}{/if}{if !empty($themeconf.id)} {$themeconf.id}{/if}">

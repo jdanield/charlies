@@ -1,0 +1,1 @@
+Charlies content er en global løsning for filer som ikke er bilde filer.

@@ -105,7 +105,7 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 	if (!isset($charlie['Acrobat'])) 		$charlie['Acrobat'] = array('pdf',); 
 	if (!isset($charlie['WMplayer'])) 		$charlie['WMplayer'] = array('asf','wmv','divx','xvid',); 
 	if (!isset($charlie['QuickTime'])) 		$charlie['QuickTime'] = 
-	array('aiff','aac','bmp','gsm','mov','mpg','mpeg','mp4','m4a','psd','qt','qtif','qif','qti','snd','tif','tiff','3g2','3pg');
+	array('aiff','aac','bmp','gsm','mov','mpg','mpeg','mp4','m4a','psd','qt','qtif','qif','qti','snd','tif','tiff','3g2','3pg','3gp');
 	if (!isset($charlie['Archive'])) 		$charlie['Archive'] = array('zip','rar',); 
 	if (!isset($charlie['GPS'])) 			$charlie['GPS'] = array('gpx',); 
 	$charlie['version'] = CHARLIES_VER;

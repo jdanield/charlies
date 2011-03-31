@@ -25,7 +25,7 @@ foreach ($charlie as $tpl => $ext) {
 $extensions = array_merge($extensions, array( 'flv','swf','pls','m3u','wav',
 	'mid','au','aif','mp3','pdf','asf','wmv','divx','xvid','aiff','aac','bmp',
 	'gsm','mov','mpg','mpeg','mp4','m4a','psd','qt','qtif','qif','qti','snd',
-	'tif','tiff','3g2','3pg','zip','rar' ));
+	'tif','tiff','3g2','3pg','zip','rar','3gp' ));
 // Adding some specific new extension by $conf['Charlies more extensions'] = array('dvx', 'mp8',);
 if (isset($conf['Charlies more extensions']) and is_array($conf['Charlies more extensions']))
 	$extensions = array_merge($extensions, $conf['Charlies more extensions']);

@@ -1,6 +1,6 @@
 <?php /*
 Plugin Name: Charlies content
-Version: 2.1.b
+Version: auto
 Description: Charlies content is a global solution for none picture files.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=119
 Author: VDigital, rvelices (Piwigo team)
@@ -24,7 +24,6 @@ http://flv-player.net/players/maxi/documentation/
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('CHARLIES_DIR' , basename(dirname(__FILE__)));
 define('CHARLIES_PATH' , PHPWG_PLUGINS_PATH . CHARLIES_DIR . '/');
-define('CHARLIES_VER' , '2.1.b');
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x);
 
@@ -34,9 +33,8 @@ if ( isset($_POST['reset']) and defined('IN_ADMIN')
 		if (!isset($infos)) $infos = array();
 		array_push($infos, l10n('Your configuration configuration has been reset.'));
 }
-if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER) 
-{
-	$default = array(
+
+$default = array(
 			'autoload'  		 	=> 1,
 			'autoplay'  		 	=> 1,
 			'loop'  		 		=> 1,
@@ -96,8 +94,7 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 			'color15'  		 		=> '#ff3333',
 			'color16'  		 		=> '#111111',
 		);
-	if (!isset($charlie['version'])) $charlie = $default;
-	else $charlie = array_merge( $default, $charlie );
+	$charlie = array_merge( $default, $charlie );
 	if (!isset($charlie['FlvStreamer'])) 	$charlie['FlvStreamer'] = array('flv',); 
 	if (!isset($charlie['Flash'])) 			$charlie['Flash'] = array('swf',); 
 	if (!isset($charlie['Music'])) 			$charlie['Music'] = array('pls','m3u','wav','mid','au','aif',); 
@@ -108,14 +105,13 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 	array('aiff','aac','bmp','gsm','mov','mpg','mpeg','mp4','m4a','psd','qt','qtif','qif','qti','snd','tif','tiff','3g2','3pg','3gp');
 	if (!isset($charlie['Archive'])) 		$charlie['Archive'] = array('zip','rar',); 
 	if (!isset($charlie['GPS'])) 			$charlie['GPS'] = array('gpx',); 
-	$charlie['version'] = CHARLIES_VER;
 
 	$dir = $conf['local_data_dir'].'/plugins/';
 	@mkdir($dir);
 	$file = fopen( $dir.basename(dirname(__FILE__)).'.dat', 'w' );
 	fwrite($file, serialize($charlie));
 	fclose( $file );
-}
+
   /* Note: Uppercase extensions are not requested */
   /**
    * That means you must have a tpl file for each... player

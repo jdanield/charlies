@@ -79,7 +79,7 @@ $lang['Filename.xml might be use as config.xml file'] = 'Fájlnév.xml (használ
 //tab2 : options -> subtab4 : Skin
 $lang['Margin for skin'] = 'Szegély a szkín-re';
 $lang['Skin image'] = 'Szkín kép';
-$lang['(URL of a non progressive jpg)'] = '(URL of a non progressive jpg)';
+$lang['(URL of a non progressive jpg)'] = '(URL nem progresszív jpg)';
 //tab2 : options -> subtab5 : Titleling
 $lang['Title'] = 'Title';
 $lang['Title font size [12-72]'] = 'Cím betűméret [12-72]';
@@ -88,7 +88,7 @@ $lang['Start image'] = 'Start kép';
 $lang['Title and start picture'] = 'Cím és start kép';
 $lang['Play icon in middle'] = 'Lejátszás ikon középen';
 $lang['Play icon transparency [0-100]'] = 'Lejátszás ikon átlátszóság [0-100]';
-$lang['Load an image over video'] = 'Load an image over video';
+$lang['Load an image over video'] = 'Olvasson be egy képet a videó felületére';
 $lang['(URL|x|y : where x,y are the offsets to place the picture)'] = '(URL|x|y : ahol x és y a kép eltolásának helye)';
 //tab2 : options -> subtab6 : Subtitleling
 $lang['Use subtitles'] = 'Felirat';
@@ -147,4 +147,6 @@ $lang['.png without transparency are recommended. Maybe you can change a set of 
 $lang['Default 5 seconds'] = 'Alapértelmezett 5 másodperc';
 $lang['Players colours selection'] = 'Lejátszó színeinek beállítása';
 $lang['URL of .srt'] = '.srt URL címe';
+$lang['Color usage might be just for information (Players could just ignore them or use them differently)'] = 'A színezés esetleg csak tájékoztató jellegű (A lejátszó használhatja másként, vagy figyelmen kívül hagyhatja)';
+$lang['or fullscreen or playpause or none'] = 'vagy fullscreen (teljes képernyő), vagy playpause (pill. állj), vagy none (semmi)';
 ?>

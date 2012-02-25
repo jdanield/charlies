@@ -131,4 +131,12 @@ $lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propri
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'Non sei autorizzato a cambiare questa configurazione';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'La tua configurazione non è stata salvata per i motivi sopra';
 $lang['Your configuration is saved.'] = 'La configurazione è stata salvata';
+$lang['Filename.srt might be use for captioning'] = 'Filename.srt può essere usato per la didascalia';
+$lang['FYI: all these options might be used or NOT by the inbound player (template).'] = 'Nota: tutte queste opzioni potrebbero o NON potrebbero essere usate dal player incluso (template).';
+$lang['Onclick URL'] = 'URL al click';
+$lang['or fullscreen or playpause or none'] = 'o fullscreen o in pausa o nessuno';
+$lang['Stop stops loading'] = 'Stop ferma il caricamento';
+$lang['Subtitleling'] = 'Sottotitolatura';
+$lang['Titleling'] = 'Titolatura';
+$lang['_blank'] = '_vuoto';
 ?>

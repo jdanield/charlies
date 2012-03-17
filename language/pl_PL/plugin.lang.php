@@ -50,8 +50,7 @@ $lang['Time left'] = 'Pozostały czas';
 $lang['Unknown file (Start image)'] = 'Nieznany plik (obrazek startowy)';
 $lang['Unknown file or URL|x|y error (x and y must be numeric)'] = 'Nieznany pliku lub URL|x|y błąd (x i y muszą być liczbami)';
 $lang['Video default height'] = 'Domyślna wysokość filmu';
-$lang['Video default width'] = '
-Domyślna szerokość filmu';
+$lang['Video default width'] = 'Domyślna szerokość filmu';
 $lang['Volume is out of range (Correct range: 0-200)'] = 'Głośność poza skalą (prawidłowa zawiera się od 0 do 200)';
 $lang['Volume [0-200]'] = 'Głośność [0-200]';
 $lang['_blank'] = '_blank';
@@ -89,4 +88,11 @@ $lang['URL of .srt'] = 'Adres URL pliku .srt';
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Zła nazwa lub brak pliku pliku (plik podpisów)';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'Konfiguracja niezapisana. Powód podany powyżej.';
 $lang['Your configuration is saved.'] = 'Konfiguracja zapisana';
+$lang['Default 5 seconds'] = 'Domyślnie 5 sekund';
+$lang['Default size might be 20.'] = 'Domyślny rozmiar to 20.';
+$lang['PHP streaming'] = 'Strumieniowanie PHP';
+$lang['Start image'] = 'Obraz startowy';
+$lang['Use existing .txt to config'] = 'Użyj do konfiguracji istniejący plik tekstowy';
+$lang['Use existing .xml to config'] = 'Użyj do konfiguracji istniejący pliku .xml';
+$lang['Use subtitles'] = 'Korzystaj z napisów';
 ?>

@@ -95,4 +95,14 @@ $lang['Start image'] = 'Obraz startowy';
 $lang['Use existing .txt to config'] = 'Użyj do konfiguracji istniejący plik tekstowy';
 $lang['Use existing .xml to config'] = 'Użyj do konfiguracji istniejący pliku .xml';
 $lang['Use subtitles'] = 'Korzystaj z napisów';
+$lang['Buffering _n_'] = 'Buforowanie _n_';
+$lang['General options'] = 'Opcje główne';
+$lang['or fullscreen or playpause or none'] = 'lub na pełnym ekranie lub odtwórz/pauza lub brak';
+$lang['Play icon in middle'] = 'Ikona odtwarzania w środku';
+$lang['Play icon transparency [0-100]'] = 'Przezroczystość ikony odtwarzania [0-100]';
+$lang['Subtitles font size [8-24]'] = 'Czcionka napisów [8-24]';
+$lang['Title font size [12-72]'] = 'Czcionka tytułu [12-72]';
+$lang['Title'] = 'Tytuł';
+$lang['Video buffer percent message'] = 'Informacja o procencie bufora video';
+$lang['Video buffer size in seconds'] = 'Bufor video w sekundach';
 ?>

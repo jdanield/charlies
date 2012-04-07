@@ -105,4 +105,8 @@ $lang['Title font size [12-72]'] = 'Czcionka tytułu [12-72]';
 $lang['Title'] = 'Tytuł';
 $lang['Video buffer percent message'] = 'Informacja o procencie bufora video';
 $lang['Video buffer size in seconds'] = 'Bufor video w sekundach';
+$lang['Autohide delay is out of range (Correct range: 0-9999)'] = 'Opóźnienie autoukrywania nie mieści się w zakresie (Prawidłowy zakres: 0-9999)';
+$lang['Play icon transparency is out of range (Correct range: 0-100)'] = 'Przezroczystość ikony odtwarzana nie mieści się w zakresie (Prawidłowy zakres: 0-100)';
+$lang['Player transparency is out of range (Correct range: 0-100)'] = 'Przezroczystość odtwarzacza jest poza zasięgiem (Prawidłowy zakres: 0-100)';
+$lang['Subtitle font size is out of range (Correct range: 8-24)'] = 'Rozmiar czcionki napisów jest poza zasięgiem (Prawidłowy zakres: 8-24)';
 ?>

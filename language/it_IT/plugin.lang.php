@@ -139,4 +139,9 @@ $lang['Stop stops loading'] = 'Stop ferma il caricamento';
 $lang['Subtitleling'] = 'Sottotitolatura';
 $lang['Titleling'] = 'Titolatura';
 $lang['_blank'] = '_vuoto';
+$lang['Bind your prefered extensions to a template file (player) from:'] = 'Associare le estensioni preferito in un file di template (player) da:';
+$lang['Charlies player template-mimetype association'] = 'Associazioni template-mimetype del Player Charlies ';
+$lang['Hover bar gradient'] = 'Gradiente della barra sospesa';
+$lang['Hover player buttons'] = 'Pulsanti sospesi del player';
+$lang['_self'] = '_uguale';
 ?>

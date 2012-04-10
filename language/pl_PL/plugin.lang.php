@@ -109,4 +109,17 @@ $lang['Autohide delay is out of range (Correct range: 0-9999)'] = 'Opóźnienie 
 $lang['Play icon transparency is out of range (Correct range: 0-100)'] = 'Przezroczystość ikony odtwarzana nie mieści się w zakresie (Prawidłowy zakres: 0-100)';
 $lang['Player transparency is out of range (Correct range: 0-100)'] = 'Przezroczystość odtwarzacza jest poza zasięgiem (Prawidłowy zakres: 0-100)';
 $lang['Subtitle font size is out of range (Correct range: 8-24)'] = 'Rozmiar czcionki napisów jest poza zasięgiem (Prawidłowy zakres: 8-24)';
+$lang['(URL of a non progressive jpg)'] = 'Link do oryginału';
+$lang['Charlies players configuration'] = 'Konfiguracja odtwarzaczy Charlie\'go';
+$lang['Config by element'] = 'Element konfigurowalny';
+$lang['Filename.txt might be use as config.txt file'] = 'Filname.txt może być użyty zamiast pliku config.txt';
+$lang['Filename.xml might be use as config.xml file'] = 'Filname.xml może być użyty zamiast pliku config.xml';
+$lang['Margin for skin'] = 'Margines dla skórki';
+$lang['Onclick URL'] = 'Onclick URL';
+$lang['Save Charlies\' configuration'] = 'Zapisz konfigurację Charlie\'go';
+$lang['Skin image'] = 'Obrazek skórki';
+$lang['Skin'] = 'Skórka';
+$lang['Title and start picture'] = 'Tytuł i obrazek startowy';
+$lang['Video buffer background'] = 'Tło bufforowania video';
+$lang['You are Adviser and you are not authorized to change this configuration.'] = 'Jesteś Konsultantem i nie masz odpowiednich uprawnień aby zmieniać tą konfigurację';
 ?>

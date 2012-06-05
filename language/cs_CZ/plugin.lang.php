@@ -62,4 +62,12 @@ $lang['Use subtitles'] = 'Použít podtitulky';
 $lang['Volume is out of range (Correct range: 0-200)'] = 'Zvuk je mimo rozsah (oprav rozsah: 0-200)';
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Špatný název souboru nebo soubor nebyl nalezen (soubor podtitulků)';
 $lang['Your configuration is saved.'] = 'Vaše nastavení je uloženo';
+$lang['Fullscreen'] = 'Celá obrazovka';
+$lang['Keyboard shortcuts'] = 'Klávesové zkratky';
+$lang['Loop'] = 'Smyčka';
+$lang['PHP streaming'] = 'PHP streaming';
+$lang['Player'] = 'Přehravač';
+$lang['RTMP server URL'] = 'RTMP server URL';
+$lang['Show stop button'] = 'Ukaž stop tlačítko';
+$lang['Show volume'] = 'Ukaž hlasitost';
 ?>

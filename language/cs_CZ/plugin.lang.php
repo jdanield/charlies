@@ -70,4 +70,6 @@ $lang['Player'] = 'Přehravač';
 $lang['RTMP server URL'] = 'RTMP server URL';
 $lang['Show stop button'] = 'Ukaž stop tlačítko';
 $lang['Show volume'] = 'Ukaž hlasitost';
+$lang['Autoload'] = 'Automatické nahrání';
+$lang['Volume ']['0-200'] = 'Hlasitost [0-200]';
 ?>

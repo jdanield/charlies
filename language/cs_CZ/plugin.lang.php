@@ -72,4 +72,10 @@ $lang['Show stop button'] = 'Ukaž stop tlačítko';
 $lang['Show volume'] = 'Ukaž hlasitost';
 $lang['Autoload'] = 'Automatické nahrání';
 $lang['Volume ']['0-200'] = 'Hlasitost [0-200]';
+$lang['Video buffer background'] = 'Pozadí vyrovnávací paměti videa';
+$lang['Video buffer size in seconds'] = 'Velikost vyrovnávací paměti videa v sekundách';
+$lang['Video default height'] = 'Standardní výška videa';
+$lang['Video default width'] = 'Standardní šířka videa';
+$lang['_blank'] = '_blank';
+$lang['_self'] = '_self';
 ?>

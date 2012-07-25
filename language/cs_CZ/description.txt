@@ -1,1 +1,1 @@
-Charlieho obsah je globální řešení neobrázkových spoborů.
+Charlieho obsah je globální řešení neobrázkových souborů.

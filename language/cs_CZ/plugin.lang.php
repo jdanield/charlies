@@ -140,4 +140,8 @@ $lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propri
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'Jste rádce a nejste oprávněn měnit toto nastavení.';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'Vaše nastavení NEBYLO uloženo z výše uvedených důvodů.';
 $lang['or fullscreen or playpause or none'] = 'nebo celoobrazovkový nebo playpause nebo žádný';
+$lang['Rightbar gradient fading'] = 'Gradient pravého pruhu';
+$lang['Hover bar gradient'] = 'Gradient pruhu pod myší';
+$lang['Hover player buttons'] = 'Tlačítka přehrávače pod myší';
+$lang['Leftbar gradient fading'] = 'Gradient levého pruhu';
 ?>

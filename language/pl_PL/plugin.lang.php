@@ -122,4 +122,5 @@ $lang['Skin'] = 'Skórka';
 $lang['Title and start picture'] = 'Tytuł i obrazek startowy';
 $lang['Video buffer background'] = 'Tło bufforowania video';
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'Jesteś Konsultantem i nie masz odpowiednich uprawnień aby zmieniać tą konfigurację';
+$lang['RTMP server URL'] = 'Adres URL serwera RTMP';
 ?>

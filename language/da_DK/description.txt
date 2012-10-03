@@ -1,0 +1,1 @@
+Charlies indhold er en global løsning for ikke billed filer.

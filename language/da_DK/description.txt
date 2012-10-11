@@ -1,1 +1,1 @@
-Charlies indhold er en global løsning for ikke billed filer.
+Charlies Content er en global løsning til indhold, som ikke er billedfiler.

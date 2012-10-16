@@ -24,10 +24,7 @@ $lang['Autohide delay is out of range (Correct range: 0-9999)'] = 'Felbukkanó k
 $lang['Player transparency is out of range (Correct range: 0-100)'] = 'Lejátszó átlátszósága tartományon kívül esik (Helyes érték: 0-100 között)';
 $lang['Subtitle font size is out of range (Correct range: 8-24)'] = 'Felirat betűméret tartományon kívül esik (Helyes érték: 8-24 között)';
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Hibás fájlnév, vagy fájl nem található (Felirat fájl)';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol 
-    developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 
-	'Hibás fájlnév. RTMP (Real Time Messaging Protocol) egy TCP alapú protokol, 
-    melyet az Adobe System fejlesztett ki, streaming Audio/Video adat, Flash Player és a kiszolgáló közötti adatfolyam.';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Hibás fájlnév. RTMP (Real Time Messaging Protocol) egy TCP alapú protokol, melyet az Adobe System fejlesztett ki, streaming Audio/Video adat, Flash Player és a kiszolgáló közötti adatfolyam.';
 $lang['Invalid color code: 3 or 6 hexadecimal characters, preceded by "#"'] = 'Érvénytelen színkód: 3 vagy 6 hexadecimális karakter, előtte "#"';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'A konfiguráció beállítások NEM menthetők a fenti okok miatt.';
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'A jogosultságok nem teszik lehetővé a konfiguráció módosítását.';

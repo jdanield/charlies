@@ -150,6 +150,5 @@ $lang['Player transparency ']['0-100'] = 'Atskaņotāja caurspīdīgums [0-100]'
 $lang['Subtitles font size ']['8-24'] = 'Subtitru fonta izmērs [8-24]';
 $lang['Title font size ']['12-72'] = 'Virsraksta fonta izmērs [12-72]';
 $lang['Volume ']['0-200'] = 'Skaļums [0-200]';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol 
-    developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Kļūdains faila nosaukums. RTMP (Reālā laika Ziņapmaiņas protokols) ir uz TCP bazēts protokols, ko Adobe Systems izstrādājis Audio/Video datu straumēšanai starp Flash Player and media serveri.';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Kļūdains faila nosaukums. RTMP (Reālā laika Ziņapmaiņas protokols) ir uz TCP bazēts protokols, ko Adobe Systems izstrādājis Audio/Video datu straumēšanai starp Flash Player and media serveri.';
 ?>

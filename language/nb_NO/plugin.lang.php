@@ -24,10 +24,7 @@ $lang['Autohide delay is out of range (Correct range: 0-9999)'] = 'Autoskjul for
 $lang['Player transparency is out of range (Correct range: 0-100)'] = 'Spiller gjennomsiktighet er utenfor rekkevidde (Korrekt rekkevidde: 0-100)'; 
 $lang['Subtitle font size is out of range (Correct range: 8-24)'] = 'Underteksters font størrelse er utenfor rekkevidde (Korrekt rekkevidde: 8-24)'; 
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Feil fil navn eller fil ikke funnet (Undertekster fil)'; 
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming
-Audio/Video data between Flash Player and media server.'] =
-     'Feil fil navn. RTMP (Real Time Messaging Protocol) er en TCP basert egenskaps protokol
-     utviklet av Adobe System for å kunne streeme Audio/Video data mellom Flash Player og media server.'; 
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Feil fil navn. RTMP (Real Time Messaging Protocol) er en TCP basert egenskaps protokol utviklet av Adobe System for å kunne streeme Audio/Video data mellom Flash Player og media server.';
 $lang['Invalid color code: 3 or 6 hexadecimal characters, preceded by "#"'] = 'Invalid farge kode: 3 eller 6 hexadesimal karakterer, etterfulgt av "#"';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'Din konfigurasjon er IKKE lagret grunnet overnevnte grunner.'; 
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'Du er anbefaler og ikke autorisert til å endre denne konfigurasjonen.';

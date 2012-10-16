@@ -32,8 +32,7 @@ $lang['Autohide'] = 'Αυτόματη απόκρυψη';
 $lang['Autoload'] = 'Αυτόματη Φόρτωση';
 $lang['Autoplay'] = 'Αυτόματη Αναπαραγωγή';
 $lang['Background'] = 'Φόντο';
-$lang['Bind your prefered extensions to a template file (player) from:'] = 'Δεσμεύει τις επεκτάσεις της αρεσκείας σας σε ένα αρχείο προτύπου (player) από:
-';
+$lang['Bind your prefered extensions to a template file (player) from:'] = 'Δεσμεύει τις επεκτάσεις της αρεσκείας σας σε ένα αρχείο προτύπου (player) από:';
 $lang['Bottom border fading'] = 'Εξασθένιση των ορίων του κάτω μέρους της οθόνης';
 $lang['Buffer background'] = 'Πλαίσιο ενδιάμεσης μνήμης';
 $lang['Buffer'] = 'Ενδιάμεση μνήμη';
@@ -137,8 +136,7 @@ $lang['Video default width'] = 'Προεπιλεγμένο πλάτος Βίντ
 $lang['Volume ']['0-200'] = 'Ένταση [0-200]';
 $lang['Volume is out of range (Correct range: 0-200)'] = 'Η ένταση είναι εκτός εμβέλειας (σωστό εύρος: 0-200)';
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Λάθος όνομα αρχείου ή το αρχείο δεν βρέθηκε (Αρχείο Υποτίτλων)';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol 
-    developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Λάθος όνομα αρχείου.  RTMP (Real Time Messaging Protocol)(Πρωτόκολλο Μηνυμάτων Πραγματικού Χρόνου) είναι ένα πρωτόκολλο βασισμένο στο TCP που αναπτύχθηκε από την Adobe System για το σκοπό της συνεχούς ροής ήχου / βίντεο μεταξύ των στοιχείων Flash Player και Media Server.';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Λάθος όνομα αρχείου.  RTMP (Real Time Messaging Protocol)(Πρωτόκολλο Μηνυμάτων Πραγματικού Χρόνου) είναι ένα πρωτόκολλο βασισμένο στο TCP που αναπτύχθηκε από την Adobe System για το σκοπό της συνεχούς ροής ήχου / βίντεο μεταξύ των στοιχείων Flash Player και Media Server.';
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'Δεν έχετε το δικαίωμα να αλλάξει αυτή η ρύθμιση.';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'Οι ρυθμίσεις σας δεν αποθηκεύτηκαν λόγω των παραπάνω λόγων.';
 $lang['Your configuration is saved.'] = 'Οι ρυθμίσεις σας αποθηκεύτηκαν.';

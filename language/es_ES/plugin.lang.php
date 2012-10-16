@@ -21,8 +21,7 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['Always'] = 'Siempre';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol 
-    developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Nombre de archivo incorrecto. RTMP (Real Time Messaging Protocol) es un protocolo propietario basado en TCP, y desarrollado por Adobe para las necesidades de streaming de audio y datos de vídeo entre Flash Player y el "servidor de los medios de comunicación".';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Nombre de archivo incorrecto. RTMP (Real Time Messaging Protocol) es un protocolo propietario basado en TCP, y desarrollado por Adobe para las necesidades de streaming de audio y datos de vídeo entre Flash Player y el "servidor de los medios de comunicación".';
 $lang['Use existing .txt to config'] = 'Utilizar un fichero .txt existente para configurar';
 $lang['Use existing .xml to config'] = 'Utilizar un fichero .xml existente para configurar';
 $lang['Use subtitles'] = 'Utilizar subtitulos';

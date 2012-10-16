@@ -136,8 +136,7 @@ $lang['Video default width'] = 'Ширина видео по умолчанию'
 $lang['Volume ']['0-200'] = 'Громкость [0-200]';
 $lang['Volume is out of range (Correct range: 0-200)'] = 'Громкость находится вне диапазона (правильный диапазон: 0-200)';
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Неправильное имя файла или файл не найден (файл подзаголовка)';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol 
-    developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Неправильное имя файла. RTMP (Real Time Протокол сообщений) является протоколом, основанным на TCP разработанной системы Adobe для передачи потокового аудио / видео данных между Flash Player и медиа-сервером.';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Неправильное имя файла. RTMP (Real Time Протокол сообщений) является протоколом, основанным на TCP разработанной системы Adobe для передачи потокового аудио / видео данных между Flash Player и медиа-сервером.';
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'У Вас нет допуска к изменению этой конфигурации.';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'Ваша конфигурация не сохраняется из-за указанных выше причин.';
 $lang['Your configuration is saved.'] = 'Ваша конфигурация сохранена.';

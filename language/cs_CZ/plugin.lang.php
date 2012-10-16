@@ -135,8 +135,7 @@ $lang['Unknown file or URL|x|y error (x and y must be numeric)'] = 'Neznámý so
 $lang['Use existing .txt to config'] = 'Použij existující .txt do nastavení';
 $lang['Use existing .xml to config'] = 'Použij existující .xml do nastavení';
 $lang['Video buffer percent message'] = 'Zpráva o procentech vyrovnávací paměti videa';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol 
-    developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Špatné jméno souboru, RTMP (Real Time Messaging Protocol) je na TCP založený proprietární protokol, vyvinutý Adobe System za účelem streamování audio/video dat mezi Flash Playerem a media serverem.';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Špatné jméno souboru, RTMP (Real Time Messaging Protocol) je na TCP založený proprietární protokol, vyvinutý Adobe System za účelem streamování audio/video dat mezi Flash Playerem a media serverem.';
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'Jste rádce a nejste oprávněn měnit toto nastavení.';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'Vaše nastavení NEBYLO uloženo z výše uvedených důvodů.';
 $lang['or fullscreen or playpause or none'] = 'nebo celoobrazovkový nebo playpause nebo žádný';

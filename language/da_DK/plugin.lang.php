@@ -142,5 +142,5 @@ $lang['Forced video height'] = 'Tvungen videohøjde';
 $lang['Forced video width'] = 'Tvungen videobredde';
 $lang['Forced width is out of range (Correct range: 90-1024)'] = 'Tvungen bredde er uden for intervallet (korrekt interval: 90-1024)';
 $lang['Fullscreen'] = 'Fuldskærm';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Forkert filnavn.';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Forkert filnavn. RTMP (Real Time Messaging Protocol) er en TCP-baseret proprietær protokol udviklet af Adobe System med det formål at streame lyd- og billeddata mellem Flash Player og en medieserver.';
 ?>

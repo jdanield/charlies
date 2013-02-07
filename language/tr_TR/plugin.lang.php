@@ -94,4 +94,17 @@ $lang['Display first picture'] = 'İlk resmi göster';
 $lang['Default width is out of range (Correct range: 90-1024)'] = 'Varsayılan genişlik öngörülenin dışında (Öngörülen 90-1024)';
 $lang['Default size might be 11.'] = 'Varsayılan boyut 11 olmalı.';
 $lang['Default size might be 20.'] = 'Varsayılan boyut 20 olmalı.';
+$lang['URL of .srt'] = '.srt nin URL si';
+$lang['Your configuration is saved.'] = 'Ayarlarınız kaydedildi.';
+$lang['Use existing .xml to config'] = 'Ayar için mevcut .xml kullan';
+$lang['Your configuration is NOT saved due to above reasons.'] = 'Yapılandırmanız yukarıdaki nedenlerden dolayı kayıt EDİLEMEDİ.';
+$lang['Use existing .txt to config'] = 'Ayar için mevcut .txt kullan';
+$lang['Unknown file or URL|x|y error (x and y must be numeric)'] = 'Bilinmeyen dosya veya URL|x|y hata (x ve y sayılardan oluşmalı)';
+$lang['Unknown file (Start image)'] = 'Bilinmeyen dosya (Başlangıç resmi)';
+$lang['Unknown file (skin)'] = 'Bilinmeyen dosya (skin)';
+$lang['Loading bar'] = 'Yükleme çubuğu';
+$lang['Load an image over video'] = 'Video üzerine bir resim yükleyin';
+$lang['Forced width is out of range (Correct range: 90-1024)'] = 'Video genişliği varsayılanın dışında(Varsayılan: 90-1024)';
+$lang['Forced video width'] = 'Video genişliği';
+$lang['Forced video height'] = 'Video yüksekliği';
 ?>

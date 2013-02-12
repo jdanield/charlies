@@ -1,0 +1,1 @@
+Wtyczka Charlies Content jest globalny rozwiązaniem dla plików "niegraficznych".

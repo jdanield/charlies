@@ -24,10 +24,7 @@ $lang['Autohide delay is out of range (Correct range: 0-9999)'] = 'Felbukkanó k
 $lang['Player transparency is out of range (Correct range: 0-100)'] = 'Lejátszó átlátszósága tartományon kívül esik (Helyes érték: 0-100 között)';
 $lang['Subtitle font size is out of range (Correct range: 8-24)'] = 'Felirat betűméret tartományon kívül esik (Helyes érték: 8-24 között)';
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Hibás fájlnév, vagy fájl nem található (Felirat fájl)';
-$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol 
-    developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 
-	'Hibás fájlnév. RTMP (Real Time Messaging Protocol) egy TCP alapú protokol, 
-    melyet az Adobe System fejlesztett ki, streaming Audio/Video adat, Flash Player és a kiszolgáló közötti adatfolyam.';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Hibás fájlnév. RTMP (Real Time Messaging Protocol) egy TCP alapú protokol, melyet az Adobe System fejlesztett ki, streaming Audio/Video adat, Flash Player és a kiszolgáló közötti adatfolyam.';
 $lang['Invalid color code: 3 or 6 hexadecimal characters, preceded by "#"'] = 'Érvénytelen színkód: 3 vagy 6 hexadecimális karakter, előtte "#"';
 $lang['Your configuration is NOT saved due to above reasons.'] = 'A konfiguráció beállítások NEM menthetők a fenti okok miatt.';
 $lang['You are Adviser and you are not authorized to change this configuration.'] = 'A jogosultságok nem teszik lehetővé a konfiguráció módosítását.';
@@ -64,13 +61,10 @@ $lang['Video default width'] = 'Alapértelmezett szélesség';
 $lang['Video default height'] = 'Alapértelmezett magasság';
 $lang['Volume [0-200]'] = 'Hangerő [0-200]';
 $lang['Onclick URL'] = 'Kattintás URL-re';
-$lang['On doubleclick URL'] = 'Dupla kattintás URL-re';  //NINCS AZ ALAP KÉSZLETBEN (SAMLI)
-$lang['or fullscreen or playpause or none'] = 'vagy fullscreen (teljes képernyő), vagy playpause (pill. állj), vagy none (semmi)';
 $lang['_blank'] = '_blank';
 $lang['_self'] = '_self';
 //tab2 : options -> subtab2 : Buffering
 $lang['Video buffer size in seconds'] = 'Video puffer méret (másodperc)';
-$lang['Default 5 seconds.'] = 'Alapértelmezett: 5 másodperc'; //HIÁNYZÓ PONT (SAMLI)
 $lang['Video buffer percent message'] = 'Video puffer üzenet (%)';
 $lang['Buffering _n_'] = 'Betöltve: _n_';
 $lang['Video buffer background'] = 'Video puffer háttér';
@@ -82,7 +76,7 @@ $lang['Filename.xml might be use as config.xml file'] = 'Fájlnév.xml (használ
 //tab2 : options -> subtab4 : Skin
 $lang['Margin for skin'] = 'Szegély a szkín-re';
 $lang['Skin image'] = 'Szkín kép';
-$lang['(URL of a non progressive jpg)'] = '(URL of a non progressive jpg)';
+$lang['(URL of a non progressive jpg)'] = '(URL nem progresszív jpg)';
 //tab2 : options -> subtab5 : Titleling
 $lang['Title'] = 'Title';
 $lang['Title font size [12-72]'] = 'Cím betűméret [12-72]';
@@ -91,7 +85,7 @@ $lang['Start image'] = 'Start kép';
 $lang['Title and start picture'] = 'Cím és start kép';
 $lang['Play icon in middle'] = 'Lejátszás ikon középen';
 $lang['Play icon transparency [0-100]'] = 'Lejátszás ikon átlátszóság [0-100]';
-$lang['Load an image over video'] = 'Load an image over video';
+$lang['Load an image over video'] = 'Olvasson be egy képet a videó felületére';
 $lang['(URL|x|y : where x,y are the offsets to place the picture)'] = '(URL|x|y : ahol x és y a kép eltolásának helye)';
 //tab2 : options -> subtab6 : Subtitleling
 $lang['Use subtitles'] = 'Felirat';
@@ -99,7 +93,6 @@ $lang['Filename.srt might be use for captioning'] = 'Fájlnév.srt használata a
 $lang['Subtitles font size [8-24]'] = 'Felirat betűméret [8-24]';
 $lang['Default size might be 11.'] = 'Alapértelmezett méret: 11';
 $lang['Subtitles file URL'] = 'Felirat fájl URL';
-$lang['(URL of .srt)'] = '(URL cím vagy .srt)'; //HIÁNYZÓ ZÁRÓJELEK (SAMLI)
 //tab2 : options -> subtab7 : Player and Buttons
 $lang['Show player'] = 'Lejátszó vezérlő megjelenítése';
 $lang['Autohide'] = 'Felbukkanó';
@@ -116,7 +109,7 @@ $lang['Show stop button'] = 'Stop gomb';
 $lang['Show volume'] = 'Hangerő megjelenítése';
 
 $lang['Show subtitles switch'] = 'Felirat gomb';
-$lang['Stop stops loading'] = 'Stopra leáll a betölt.';
+$lang['Stop stops loading'] = 'Stopra leáll a betöltés';
 $lang['Keyboard shortcuts'] = 'Billentyűparancsok';
 //tab2 : options -> subtab8 : Miscellaneous
 $lang['PHP streaming'] = 'PHP streaming';
@@ -127,7 +120,6 @@ $lang['Reset ALL Charlies\' configuration'] = 'Összes Charlies\' beállítás t
 $lang['Reset ALL Confirmation'] = 'Megerősítés: Minden beállítás törlése';
 
 //Tab3 : colors
-$lang['Players colours selection '] = 'Lejátszó színeinek kiválasztása'; //FELESLEGES SZÓKÖZ (SAMLI)
 $lang['Background'] = 'Háttér';
 $lang['Subtitles background'] = 'Felirat háttere';
 $lang['Top border fading'] = 'Felső szegély halványuló';
@@ -135,20 +127,23 @@ $lang['Player'] = 'Lejátszó';
 $lang['Bottom border fading'] = 'Alsó szegély halványuló';
 $lang['Loading bar'] = 'Betöltés sáv';
 $lang['Player buttons'] = 'Lejátszó gomb';
-$lang['Leftbar gradient fading'] = 'Leftbar gradient fading';
-$lang['Hover player buttons'] = 'Hover player buttons';
-$lang['Rightbar gradient fading'] = 'Rightbar gradient fading';
+$lang['Leftbar gradient fading'] = 'Leftbar színátmenet elhalványulás';
+$lang['Hover player buttons'] = 'Lebegő lejátszó gombok';
+$lang['Rightbar gradient fading'] = 'Rightbar színátmenet elhalványulás';
 $lang['Buffer'] = 'Puffer';
-$lang['Hover bar gradient'] = 'Hover bar gradient';
+$lang['Hover bar gradient'] = 'Lebegő sáv színátmenet';
 $lang['Buffer background'] = 'Puffer háttér';
 $lang['Play icon'] = 'Indít ikon';
 $lang['Title'] = 'Cím';
 $lang['Play icon background'] = 'Indít ikon háttér';
 $lang['Subtitles'] = 'Felirat';
-$lang['Color usage might be just for information (Players could just ignore them or use them differently).'] = 'A színek csak tájékoztató jellegűek (Lehet, hogy a lejátszó figyelmen kívül hagyja, vagy eltérően használja).'; //HIÁNYZÓ PONT (SAMLI)
-
 //Tab4 : curtain
 $lang['Active curtains'] = 'Elérhető függönyök';
 $lang['.png without transparency are recommended. Maybe you can change a set of curtains by yours.'] = '.png átlátszóság nélkül ajánlott. Lecserélhető saját függönyökre.';
 
+$lang['Default 5 seconds'] = 'Alapértelmezett 5 másodperc';
+$lang['Players colours selection'] = 'Lejátszó színeinek beállítása';
+$lang['URL of .srt'] = '.srt URL címe';
+$lang['Color usage might be just for information (Players could just ignore them or use them differently)'] = 'A színezés esetleg csak tájékoztató jellegű (A lejátszó használhatja másként, vagy figyelmen kívül hagyhatja)';
+$lang['or fullscreen or playpause or none'] = 'vagy fullscreen (teljes képernyő), vagy playpause (pill. állj), vagy none (semmi)';
 ?>

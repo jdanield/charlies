@@ -450,5 +450,5 @@ jQuery(document).ready(function() {ldelim}
 <link rel="stylesheet" type="text/css" href="{$CHARLIES_PATH|@cat:'charlies.css'}"> 
 {/html_head}
 
-{known_script id="jquery.ui" src=$ROOT_URL|@cat:"themes/default/js/ui/packed/ui.core.packed.js"}
-{known_script id="jquery.ui.tabs" src=$ROOT_URL|@cat:"themes/default/js/ui/packed/ui.tabs.packed.js"}
+{combine_script id="jquery.ui" path="themes/default/js/ui/minified/jquery.ui.core.min.js"} 
+{combine_script id="jquery.ui.tabs" path="themes/default/js/ui/minified/jquery.ui.tabs.min.js"}

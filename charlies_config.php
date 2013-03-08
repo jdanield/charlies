@@ -144,7 +144,7 @@ unset ( $charlie['all'] );
 // Submit and not Advisor => Update Config table
 if ( $sub and !is_adviser() and count($errors) == 0 )
 {
-  $dir = $conf['local_data_dir'].'/plugins/';
+  $dir = PHPWG_ROOT_PATH.PWG_LOCAL_DIR.'/plugins/';
   @mkdir($dir);
   $file = fopen( $dir.basename(dirname(__FILE__)).'.dat', 'w' );
   fwrite($file, serialize($charlie));

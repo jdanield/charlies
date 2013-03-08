@@ -110,7 +110,7 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 	if (!isset($charlie['GPS'])) 			$charlie['GPS'] = array('gpx',); 
 	$charlie['version'] = CHARLIES_VER;
 
-	$dir = $conf['local_data_dir'].'/plugins/';
+	$dir = PHPWG_ROOT_PATH.PWG_LOCAL_DIR.'/plugins/';
 	@mkdir($dir);
 	$file = fopen( $dir.basename(dirname(__FILE__)).'.dat', 'w' );
 	fwrite($file, serialize($charlie));

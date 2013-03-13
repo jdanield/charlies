@@ -126,4 +126,6 @@ $lang['RTMP server URL'] = 'Adres URL serwera RTMP';
 $lang['Bottom border fading'] = 'Zanikanie dolnego obramowania';
 $lang['(URL|x|y : where x,y are the offsets to place the picture)'] = '(URL|x|y : gdzie x,y to przesunięcia umiejscowienia zdjęcia)';
 $lang['Top border fading'] = 'Zanikanie górnego obramowania';
+$lang['Active curtains'] = 'Dostępne kurtyny';
+$lang['Note: These options are available with the Maxi FLV Player. More details on all theses options on:'] = 'Uwaga: Te ustawienia są dostępne dla Maxi FLV Player. Więcej szczegółów na:';
 ?>

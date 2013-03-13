@@ -1,1 +1,1 @@
-Wtyczka Charlies Content jest globalny rozwiązaniem dla plików "niegraficznych".
+Pozwala dodawać do galerii pliki "niegraficzne" (np. .flv, .mp3, .pdf i inne).

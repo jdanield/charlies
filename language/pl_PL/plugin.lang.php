@@ -128,4 +128,12 @@ $lang['(URL|x|y : where x,y are the offsets to place the picture)'] = '(URL|x|y 
 $lang['Top border fading'] = 'Zanikanie górnego obramowania';
 $lang['Active curtains'] = 'Dostępne kurtyny';
 $lang['Note: These options are available with the Maxi FLV Player. More details on all theses options on:'] = 'Uwaga: Te ustawienia są dostępne dla Maxi FLV Player. Więcej szczegółów na:';
+$lang['Leftbar gradient fading'] = 'Zanikanie gradientu lewego paska';
+$lang['Rightbar gradient fading'] = 'Zanikanie gradientu prawego paska';
+$lang['(Adobe Systems for streaming audio, video and data)'] = '(Adobe Systems dla streamingu audio, wideo i danych)';
+$lang['Wrong filename. RTMP (Real Time Messaging Protocol) is a TCP based propriety protocol developed by Adobe System for the purpose of streaming Audio/Video data between Flash Player and media server.'] = 'Nieprawidłowa nazwa pliku. RTMP (Real Time Messaging Protocl) to zastrzeżony protokół stworzony przez Adobe Systems dla streamingu audio, wideo i danych, pomiędzy playerem Flash a serwerem.';
+$lang['Load an image over video'] = 'Wczytaj obraz na wideo';
+$lang['Players colours selection'] = 'Wybór kolorów odtwarzaczy';
+$lang['Reset ALL Charlies\' configuration'] = 'Zresetuj CAŁĄ konfigurację Charliego';
+$lang['Reset ALL Confirmation'] = 'Zresetuj WSZYSTKIE potwierdzenia';
 ?>

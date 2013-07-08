@@ -25,4 +25,9 @@ $lang['Off'] = 'Виключити';
 $lang['On'] = 'Включити';
 $lang['Always'] = 'Завжди';
 $lang['Autoload'] = 'Автозавантаження';
+$lang['Fullscreen'] = 'Відкрити на весь екран';
+$lang['Show loading'] = 'Показати завантаження';
+$lang['Show mouse'] = 'Показати мишку';
+$lang['Show time'] = 'Показати час';
+$lang['Title'] = 'Назва';
 ?>

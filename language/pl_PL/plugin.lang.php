@@ -136,4 +136,6 @@ $lang['Load an image over video'] = 'Wczytaj obraz na wideo';
 $lang['Players colours selection'] = 'Wybór kolorów odtwarzaczy';
 $lang['Reset ALL Charlies\' configuration'] = 'Zresetuj CAŁĄ konfigurację Charliego';
 $lang['Reset ALL Confirmation'] = 'Zresetuj WSZYSTKIE potwierdzenia';
+$lang['Hover bar gradient'] = 'Gradient paska po najechaniu';
+$lang['Hover player buttons'] = 'Przyciski odtwarzacza po najechaniu';
 ?>

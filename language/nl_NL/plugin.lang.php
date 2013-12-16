@@ -104,4 +104,5 @@ $lang['Buffering _n_'] = 'Bufferen_n_';
 $lang['Bottom border fading'] = 'Onderrand vervaging';
 $lang['Bind your prefered extensions to a template file (player) from:'] = 'Bind de gewenste uitbreidingen van een sjabloon-bestand (speler) aan:';
 $lang['Charlies players configuration'] = 'Charlies spelers configuratie';
+$lang['Curtain selection'] = 'Overgangen';
 ?>

@@ -105,4 +105,12 @@ $lang['Bottom border fading'] = 'Onderrand vervaging';
 $lang['Bind your prefered extensions to a template file (player) from:'] = 'Bind de gewenste uitbreidingen van een sjabloon-bestand (speler) aan:';
 $lang['Charlies players configuration'] = 'Charlies spelers configuratie';
 $lang['Curtain selection'] = 'Overgangen';
+$lang['Play icon transparency is out of range (Correct range: 0-100)'] = 'De transparantie-instelling van het speel-icoon klopt niet. (Juiste mogelijkheden: 0-100)';
+$lang['Player transparency is out of range (Correct range: 0-100)'] = 'De transparantie-instelling klopt niet. (Juiste mogelijkheden: 0-100)';
+$lang['Players colors'] = 'Spelerskleuren';
+$lang['Players colours selection'] = 'Spelerskleuren-selectie';
+$lang['Subtitle font size is out of range (Correct range: 8-24)'] = 'De lettertype-grootte van de ondertiteling klopt niet. (Juiste mogelijkheden: 8-24)';
+$lang['Subtitleling'] = 'Ondertiteling';
+$lang['Title font size is out of range (Correct range: 12-72)'] = 'De lettertype-grootte van de titel klopt niet. (Juiste mogelijkheden: 8-24)';
+$lang['Wrong filename or file not found (Subtitles file)'] = 'Verkeerde bestandsnaam of bestand niet gevonden (ondertitelingsbestand)';
 ?>

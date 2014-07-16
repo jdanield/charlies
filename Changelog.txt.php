@@ -2,6 +2,14 @@
 /*
 Plugin Name: Charlies content
 ** History **
+2014-07-16 first try :-)
+As jdd, I try to maintain charlie's Contents plugin.
+But I'm not a real programmer, so I may do important mistakes. 
+If you find one, do not hesitate to write to me at jdd@dodin.org,
+thanks.
+
+The fisrt unimportant change is to create this beta version, please use the othe VDigital version for normal use.
+
   2010-05-18 2.1.b ( The review )
 					Admin page design review mainly for the "clear" theme
 					Code review

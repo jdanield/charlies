@@ -2,8 +2,6 @@
 /*
 Plugin Name: Charlies content
 ** History **
-2014-07-17 - svn test don't worry :-)
-
 2014-07-16 first try :-)
 As jdd, I try to maintain charlie's Contents plugin.
 But I'm not a real programmer, so I may do important mistakes. 

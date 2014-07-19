@@ -1,12 +1,14 @@
-<?php /*
-Plugin Name: Charlies content
-Version: 2.1.b
+<?php 
+
+/*
+Plugin Name: Charlie's content 3-beta
+Version: 3 beta
 Description: Charlies content is a global solution for none picture files.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=119
-Author: VDigital, rvelices (Piwigo team)
+Author: VDigital, rvelices (Piwigo team), jdd
 Author URI: http://piwigo.org/
-*/
-/* Synopsis
+
+Synopsis
 1 - Based on file extension...
 2 - A template is used in state of the default content
 
@@ -14,17 +16,20 @@ Dependencies:
 http://getid3.sourceforge.net/
 http://flv-player.net/players/maxi/documentation/
 
-/** 
+ 
  * All media file have to be broadcasted via an embedded player
  * so link its extention to a player name as to be define
  * the same player can be used for several extentions
+ 
  */
+ 
+ 
   global $conf, $charlie;
 
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('CHARLIES_DIR' , basename(dirname(__FILE__)));
 define('CHARLIES_PATH' , PHPWG_PLUGINS_PATH . CHARLIES_DIR . '/');
-define('CHARLIES_VER' , '2.1.b');
+define('CHARLIES_VER' , '3-beta');
 $x = @file_get_contents( $conf['local_data_dir'].'/plugins/'.basename(dirname(__FILE__)).'.dat');
 if ($x!==false) $charlie = unserialize($x);
 
@@ -57,7 +62,7 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 			'configxml'  		 	=> 0,
 			'margin'  		 		=> 8,
 			'skin'  		 		=> '', /* './plugins/charlies_content/skin.jpg', */
-			'title'  		 		=> '/n/n/nCharlies\' content ',
+			'title'  		 		=> '/n/n/nCharlies\'s content ',
 			'titlesize'  		 	=> 26,
 			'start_image'  		 	=> './plugins/charlies_content/city-lights.jpg',
 			'showtitleandstartimage'=> 0,
@@ -121,7 +126,7 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
    * That means you must have a tpl file for each... player
    * like for Flash => ./plugings/charlies_content/flash_content.tpl
    *
-   * Player name is in lower-case followed by _content.tpl
+   * Player name is in lower-case followed by _content.tpl (non)
    */
 
 $all = array();

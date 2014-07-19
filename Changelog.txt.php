@@ -2,13 +2,29 @@
 /*
 Plugin Name: Charlies content
 ** History **
-2014-07-16 first try :-)
-As jdd, I try to maintain charlie's Contents plugin.
-But I'm not a real programmer, so I may do important mistakes. 
-If you find one, do not hesitate to write to me at jdd@dodin.org,
-thanks.
+
+
+
+20140719 change comments in mp3player.tpl
+
+20140718 svn version almost identical to standard. Tests:
+
+    flv read but it's not possible to use the slider to skip part of the video (old bug)
+    avi do not read
+    mov, mp4, wmv do not read, not even display
+    gpx works
+    zip works (do not display but ask for download wich is what is expected)
+    pdf works
+    mp3 works 
+
+This page should be included in SVN
+
+Very important: if you have any problem with a file, try to send me an example I can test, thanks.
+
+As jdd, I try to maintain charlie's Contents plugin. But I'm not a real programmer, so I may do important mistakes. If you find one, do not hesitate to write to me at jdd@dodin.org, thanks.
 
 The fisrt unimportant change is to create this beta version, please use the othe VDigital version for normal use.
+
 
   2010-05-18 2.1.b ( The review )
 					Admin page design review mainly for the "clear" theme

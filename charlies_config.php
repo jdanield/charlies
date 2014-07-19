@@ -138,11 +138,11 @@ if ( $sub )
 	array_push($errors, l10n('Your configuration is NOT saved due to above reasons.'));
 }
 // Submit and Advisor => Thanks
-if ( $sub and is_adviser() and count($errors) == 0 )
-	array_push($infos, l10n('You are Adviser and you are not authorized to change this configuration.'));
-unset ( $charlie['all'] );
+//if ( $sub and is_adviser() and count($errors) == 0 )
+//	array_push($infos, l10n('You are Adviser and you are not authorized to change this configuration.'));
+//unset ( $charlie['all'] );
 // Submit and not Advisor => Update Config table
-if ( $sub and !is_adviser() and count($errors) == 0 )
+//if ( $sub and !is_adviser() and count($errors) == 0 )
 {
   $dir = PHPWG_ROOT_PATH.PWG_LOCAL_DIR.'/plugins/';
   @mkdir($dir);

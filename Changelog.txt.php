@@ -5,7 +5,7 @@ Plugin Name: Charlies content
 
 
 
-20140719 change comments in mp3player.tpl
+20140719 change comments in mp3player.tpl, change plugin name in main.inc, comment out "adviser" limitation for saving changes in config.php (no use seen)
 
 20140718 svn version almost identical to standard. Tests:
 

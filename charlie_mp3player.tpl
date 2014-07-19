@@ -1,8 +1,6 @@
 <!-- /charlie_mp3player.tpl -->
 {*
- If you don't plan to play flv files on your web site,
- change player by the one you want
- Based on documention from http://www.macromedia.com/devnet/flvplayer/
+http://www.alsacreations.fr/dewplayer.html
 *}
 <br />
 {assign var="main_width" value="`$by_style+$by_style+200`"}

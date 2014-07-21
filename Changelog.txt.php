@@ -3,7 +3,7 @@
 Plugin Name: Charlies content
 ** History **
 
-20140721 fixed quicktime player (at least mov and mp4), with fixed height and width (640x360+controls
+20140721 fixed quicktime player (at least mov and mp4), with fixed height and width (640x360+controls. wmv works but with half the size (I don't know why)
 
 20140719 change comments in mp3player.tpl, change plugin name in main.inc, comment out "adviser" limitation for saving changes in config.php (no use seen)
 

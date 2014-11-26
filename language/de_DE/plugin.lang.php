@@ -20,7 +20,7 @@ $lang['Title font size is out of range (Correct range: 12-72)'] = 'Die Schriftgr
 $lang['Play icon transparency is out of range (Correct range: 0-100)'] = 'Die Durchsichtigkeit des Abspielicons isr ausserhalb des erlaubten Wertebereichs (0-100)';
 $lang['Margin is out of range (Correct range: 0-40)'] = 'Die Randbreite ist ausserhalb des erlaubten Wertebereichs (0-40)';
 $lang['Unknown file (skin)'] = 'Unbekannte Datei (Skin)';
-$lang['Autohide delay is out of range (Correct range: 0-9999)'] = 'Die Autohide-verzögerung ist ausserhalb des erlaubten Wertebereichs (0-9999)';
+$lang['Autohide delay is out of range (Correct range: 0-9999)'] = 'Die Autohide-Verzögerung ist außerhalb des erlaubten Wertebereichs (0-9999)';
 $lang['Player transparency is out of range (Correct range: 0-100)'] = 'Die Durchsichtigkeite des Players ist ausserhalb des erlaubten Wertebereichs (0-100)';
 $lang['Subtitle font size is out of range (Correct range: 8-24)'] = 'Die Schriftgröße der Untertitel ist ausserhalb des erlaubten Wertebereichs (8-24)';
 $lang['Wrong filename or file not found (Subtitles file)'] = 'Falscher Dateiname oder Datei nicht gefunden (Untertiteldatei)';
@@ -36,10 +36,10 @@ $lang['On'] = 'An';
 $lang['Off'] = 'Aus';
 //tab1 : templates
 $lang['Charlies player template-mimetype association'] = 'Charlies Player Template-mimetyp-assoziierung';
-$lang['Bind your prefered extensions to a template file (player) from:'] = 'Verknüpfen Sie Ihre bevorzugte Erweiterung mit einer Templatedatei (Player) aus:';
+$lang['Bind your prefered extensions to a template file (player) from:'] = 'Verknüpfen Sie Ihre bevorzugte Erweiterung mit einer Vorlagendatei (Player) von:';
 $lang['Note: These options are available with the Maxi FLV Player. More details on all theses options on:'] = 'Hinweis: Diese Optionen sind mit dem Maxi FLV Player verfügbar. Weitere Details finden Sie unter:';
 //tab2 : options
-$lang['Charlies players configuration'] = 'Charlies Player Konfiguration';
+$lang['Charlies players configuration'] = 'Charlies Player-Einstellung';
 $lang['General options'] = 'Allgemeine Optionen';
 $lang['Buffering'] = 'Zwischenspeicherung';
 $lang['Config by element'] = 'Konfiguration pro Element';
@@ -49,9 +49,9 @@ $lang['Subtitleling'] = 'Untertitel';
 $lang['Player and Buttons'] = 'Player und Knöpfe';
 $lang['Miscellaneous'] = 'Weiteres';
 //tab2 : options -> subtab1 : General options
-$lang['Autoload'] = 'Autoload';
-$lang['Display first picture'] = 'Zeige erstes Bild';
-$lang['Autoplay'] = 'Autoplay';
+$lang['Autoload'] = 'Automatisch laden';
+$lang['Display first picture'] = 'Erstes Bild anzeigen';
+$lang['Autoplay'] = 'Automatisch abspielen';
 $lang['Loop'] = 'Wiederholung';
 $lang['Fullscreen'] = 'Vollbild';
 $lang['Flash Player 9.0.16.60 or above is required.'] = 'Flash Player 9.0.16.60 oder höher wird benötigt.';
@@ -98,7 +98,7 @@ $lang['Subtitles file URL'] = 'URL der Untertiteldatei';
 $lang['URL of .srt'] = 'URL der .srt-Datei';
 //tab2 : options -> subtab7 : Player and Buttons
 $lang['Show player'] = 'Zeige Player';
-$lang['Autohide'] = 'Autohide';
+$lang['Autohide'] = 'Automatisch ausblenden';
 $lang['Always'] = 'Immer';
 $lang['Never'] = 'Nie';
 $lang['Show loading'] = 'Zeige Laden';
@@ -128,15 +128,15 @@ $lang['Background'] = 'Hintergrund';
 $lang['Subtitles background'] = 'Untertitelhintergrund';
 $lang['Top border fading'] = 'Aublendung oberere Rand';
 $lang['Player'] = 'Player';
-$lang['Bottom border fading'] = 'Ausblendung unterer Rand';
+$lang['Bottom border fading'] = 'Unterer Rand ausblenden';
 $lang['Loading bar'] = 'Ladebalken';
 $lang['Player buttons'] = 'Player-schaltflächen';
 $lang['Leftbar gradient fading'] = 'Verlauf Ausblendung linker Balken';
 $lang['Hover player buttons'] = 'Schwebende Player-schalftflächen';
 $lang['Rightbar gradient fading'] = 'Verlauf Ausblendung rechter Balken';
-$lang['Buffer'] = 'Buffer';
+$lang['Buffer'] = 'Zwischenspeicher';
 $lang['Hover bar gradient'] = 'Schwebebalkenverlauf';
-$lang['Buffer background'] = 'Bufferhintergrund';
+$lang['Buffer background'] = 'Zwischenspeicher-Hintergrund';
 $lang['Play icon'] = 'Spielicon';
 $lang['Title'] = 'Titel';
 $lang['Play icon background'] = 'Spieliconhintergrund';
@@ -147,4 +147,4 @@ $lang['Color usage might be just for information (Players could just ignore them
 $lang['Active curtains'] = 'Aktive Vorhänge';
 $lang['.png without transparency are recommended. Maybe you can change a set of curtains by yours.'] = 'Es werden .png-Dateien ohne Transparenz empfohlen. Wenn gewünscht, können Sie Vorhangsets durch eigene ersetzen.';
 
-?>
+$lang['Autohide delay ']['0-9999'] = 'Autohide-Verzögerung [0-9999]';

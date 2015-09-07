@@ -138,7 +138,7 @@ $conf['file_ext'] = array_merge (
 
 # $charlie['all'] = $all;
 add_event_handler('render_element_content', 'render_Charlie_element_content', 40, 2 );
-add_event_handler('get_admin_plugin_menu_links', 'Charlie_plugin_admin_menu');
+#add_event_handler('get_admin_plugin_menu_links', 'Charlie_plugin_admin_menu');
 
 function Charlie_plugin_admin_menu($menu)
 {

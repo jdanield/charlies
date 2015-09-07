@@ -37,17 +37,18 @@
 
 </object> 
 -->
-
-<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab"     width="640" height="398">
+<p>{$SRC_IMG}</p>
+<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab"     width="640" height="360">
  <param name="src" value="{$SRC_IMG}">
  <param name="autoplay" value="true">
  <param name="pluginspage" value="http://www.apple.com/quicktime/download/">
  <param name="type" value="video/quicktime">
- <param name="Scale" value="ToFit" >
-    <embed 
+ <param name="Scale" value="ToFit" > 
+
+    <embed  PluginsPage="http://www.apple.com/quicktime/download/"
      src="{$SRC_IMG}" 
      width="640" 
-     height="398" 
+     height="360" 
      autoplay="true"
      Scale="ToFit" 
      pluginspage="http://www.apple.com/quicktime/download/"

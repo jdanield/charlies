@@ -3,6 +3,10 @@
 Plugin Name: Charlies content
 ** History **
 
+20150829 updated this file. Charlies go to html5 whereever it's possible. It should work for mp4 and mp3 in most if not all (html5 compatible) browsers. Options screen in piwigo disabled (never worked). The aspect is not very nice but it works, with very simple code. mp3 have no options. mp4 have size option. Change it by editing directly the charlie_html5.tpl. One can add image to the mp3 menu if he want in the usual way (like photos), but most of the time is should not be necessary.
+
+I much simplyfied flv player, it seems to work in most browsers.
+
 20140721 fixed quicktime player (at least mov and mp4), with fixed height and width (640x360+controls. wmv works but with half the size (I don't know why)
 
 20140719 change comments in mp3player.tpl, change plugin name in main.inc, comment out "adviser" limitation for saving changes in config.php (no use seen)
@@ -23,7 +27,7 @@ Very important: if you have any problem with a file, try to send me an example I
 
 As jdd, I try to maintain charlie's Contents plugin. But I'm not a real programmer, so I may do important mistakes. If you find one, do not hesitate to write to me at jdd@dodin.org, thanks.
 
-The fisrt unimportant change is to create this beta version, please use the othe VDigital version for normal use.
+The fisrt unimportant change is to create this beta version, please use the other VDigital version for normal use.
 
 
   2010-05-18 2.1.b ( The review )

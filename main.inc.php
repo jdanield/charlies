@@ -42,14 +42,14 @@ if ( isset($_POST['reset']) and defined('IN_ADMIN')
 if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER) 
 {
 	$default = array(
-			'autoload'  		 	=> 1,
+			'autoload'  		 	=> 0,
 			'autoplay'  		 	=> 1,
 			'loop'  		 		=> 1,
 			'full'  		 		=> 1,
 			'forced_width'  		=> '',
 			'forced_height'  		=> '',
-			'video_default_width'  	=>  320,
-			'video_default_height'  =>  240,
+			'video_default_width'  	=>  '',
+			'video_default_height'  =>  '',
 			'volume'  		 		=> 150,
 			'onclick'  		 		=> 'playpause',
 			'onclicktarget'  		=> 0,
@@ -60,7 +60,7 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 			'buffershowbg'  		=> 0,
 			'config'  		 		=> 0,
 			'configxml'  		 	=> 0,
-			'margin'  		 		=> 8,
+			'margin'  		 		=> 2,
 			'skin'  		 		=> '', /* './plugins/charlies_content/skin.jpg', */
 			'title'  		 		=> '/n/n/nCharlies\'s content ',
 			'titlesize'  		 	=> 26,
@@ -83,34 +83,18 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
 			'phpstream'  		 	=> 1,
 			'curtain'  		 		=> 'none',
 			'start_image'  		 	=>  CHARLIES_PATH . 'background.jpg',
-			'color0'  		 		=> '#111111',
-			'color1'  		 		=> '#ff7700',
-			'color2'  		 		=> '#444444',
-			'color3'  		 		=> '#ff3333',
-			'color4'  		 		=> '#ff3363',
-			'color5'  		 		=> '#ff7700',
-			'color6'  		 		=> '#111111',
-			'color7'  		 		=> '#ff3333',
-			'color8'  		 		=> '#ff3363',
-			'color9'  		 		=> '#111111',
-			'color10'  		 		=> '#444444',
-			'color11'  		 		=> '#ff3333',
-			'color12'  		 		=> '#ff3363',
-			'color13'  		 		=> '#ff7700',
-			'color14'  		 		=> '#444444',
-			'color15'  		 		=> '#ff3333',
-			'color16'  		 		=> '#111111',
 		);
 	if (!isset($charlie['version'])) $charlie = $default;
 	else $charlie = array_merge( $default, $charlie );
 	if (!isset($charlie['FlvStreamer'])) 	$charlie['FlvStreamer'] = array('flv',); 
+	if (!isset($charlie['html5'])) 	$charlie['html5'] = array('mp4',); 
 	if (!isset($charlie['Flash'])) 			$charlie['Flash'] = array('swf',); 
 	if (!isset($charlie['Music'])) 			$charlie['Music'] = array('pls','m3u','wav','mid','au','aif',); 
 	if (!isset($charlie['mp3Player'])) 		$charlie['mp3Player'] = array('mp3',); 
 	if (!isset($charlie['Acrobat'])) 		$charlie['Acrobat'] = array('pdf',); 
 	if (!isset($charlie['WMplayer'])) 		$charlie['WMplayer'] = array('asf','wmv','divx','xvid',); 
 	if (!isset($charlie['QuickTime'])) 		$charlie['QuickTime'] = 
-	array('aiff','aac','bmp','gsm','mov','mpg','mpeg','mp4','m4a','psd','qt','qtif','qif','qti','snd','tif','tiff','3g2','3pg','3gp');
+	array('aiff','aac','bmp','gsm','mov','mpg','mpeg','m4a','psd','qt','qtif','qif','qti','snd','tif','tiff','3g2','3pg','3gp');
 	if (!isset($charlie['Archive'])) 		$charlie['Archive'] = array('zip','rar',); 
 	if (!isset($charlie['GPS'])) 			$charlie['GPS'] = array('gpx',); 
 	$charlie['version'] = CHARLIES_VER;
@@ -126,7 +110,7 @@ if (!isset($charlie['version']) or  $charlie['version'] != CHARLIES_VER)
    * That means you must have a tpl file for each... player
    * like for Flash => ./plugings/charlies_content/flash_content.tpl
    *
-   * Player name is in lower-case followed by _content.tpl (non)
+   * Player name is in lower-case followed by _content.tpl (non c'est charlie_nomplayer)
    */
 
 $all = array();
@@ -138,20 +122,7 @@ $conf['file_ext'] = array_merge (
 
 # $charlie['all'] = $all;
 add_event_handler('render_element_content', 'render_Charlie_element_content', 40, 2 );
-#add_event_handler('get_admin_plugin_menu_links', 'Charlie_plugin_admin_menu');
 
-function Charlie_plugin_admin_menu($menu)
-{
-	array_push($menu, array(
-				'NAME' => 'Charlies\'', 
-				'URL' => get_admin_plugin_menu_link(dirname(__FILE__).'/charlies_config.php'), 
-			));
-	return $menu;
-}  
-
-/**
- * Only if picture.php is active
- */
 function render_Charlie_element_content($content, $picture)
 {
   global $template, $charlie, $page, $conf;

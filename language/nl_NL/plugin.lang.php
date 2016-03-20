@@ -129,3 +129,4 @@ $lang['Top border fading'] = 'Top rand vervagen';
 $lang['(URL|x|y : where x,y are the offsets to place the picture)'] = '(URL|x|y: waarbij x,y de offsets zijn om de foto te plaatsen)';
 $lang['(URL of a non progressive jpg)'] = '(De URL van een niet-progressieve jpg)';
 $lang['(Adobe Systems for streaming audio, video and data)'] = '(Adobe Systems voor streaming audio, video en data)';
+$lang['Margin is out of range (Correct range: 0-40)'] = 'Marge buiten bereik (Moet liggen tussen 0-40) ';

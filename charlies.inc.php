@@ -21,7 +21,8 @@ function Charlies_content($picture)
   // TODO TPL DOES NOT EXIST 
   $path = $picture['element_path'];
   $url = $picture['element_url'];
-  if ( !url_is_remote($url) )
+  // Compatibility with piwigo_privacy plugin needs to skip set_make_full_url when derivative_url_style is enabled. 
+  if ( !url_is_remote($url) && ($conf['derivative_url_style'] !== 1) )
   {
     set_make_full_url();
     $url = get_element_url( $picture );
